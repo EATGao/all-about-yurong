@@ -1,11 +1,14 @@
 import './App.css';
-import Header from './Header';
+import Header from './Header/Header';
+import MainPage from './MainPage';
+import Sidebar from './Sidebar';
 
 function App() {
   return (
     <div className="app">
       <Header />
-      {/*Sidebar*/}
+      <Sidebar />
+      <MainPage />
       {/*Main*/}
     </div>
   );

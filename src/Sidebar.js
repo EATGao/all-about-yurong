@@ -1,4 +1,4 @@
-import 'Sidebar.css'
+import './Sidebar.css'
 import React from 'react'
 
 function Sidebar() {
