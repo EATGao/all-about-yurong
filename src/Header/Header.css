@@ -1,0 +1,32 @@
+.header {
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    background-color: burlywood;
+    width: 100%;
+    padding-top: 10px;
+    border-bottom: 3px solid whitesmoke;
+
+}
+
+.header__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__top > h2 {
+    color: whitesmoke;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+.header__bottom {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__options {
+    display: flex;
+    align-items: center;
+}
