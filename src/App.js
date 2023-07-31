@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './Header/Header';
-import MainPage from './MainPage';
+import Home from './Pages/Home/Home';
 import Sidebar from './Sidebar';
 
 function App() {
@@ -8,8 +8,7 @@ function App() {
     <div className="app">
       <Header />
       <Sidebar />
-      <MainPage />
-      {/*Main*/}
+      <Home />
     </div>
   );
 }
