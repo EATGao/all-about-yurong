@@ -3,6 +3,10 @@ import React from 'react'
 import HeaderOption from './HeaderOption'
 
 function Header() {
+  const onClick = () => {
+
+  }
+
   return (
     <div className='header'>
       
@@ -12,10 +16,10 @@ function Header() {
 
       <div className='header__bottom'>
         <div className='header__options'>
-            <HeaderOption title='HOME'/>{' | '}
-            <HeaderOption title='ABOUT'/>{' | '}
-            <HeaderOption title='PROJECT'/>{' | '}
-            <HeaderOption title='CONTACT'/>
+            <HeaderOption title='HOME' routeTo='/'/>{' | '}
+            <HeaderOption title='ABOUT' routeTo='/about'/>{' | '}
+            <HeaderOption title='PROJECT' routeTo='/project'/>{' | '}
+            <HeaderOption title='CONTACT'routeTo='/contact'/>
         </div>
       </div> 
       

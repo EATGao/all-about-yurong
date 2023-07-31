@@ -3,15 +3,22 @@
     flex-direction: column;
     align-items: center;
     margin: 0 20px 0 20px;
-    color: whitesmoke;
-    cursor: pointer;
 }
 
 .header__option > h3 {
     font-size: 22px;
     font-weight: 500;
+    color: whitesmoke;
 }
 
-.header__option:hover {
+:any-link:hover {
     color: black;
+}
+
+:any-link:visited {
+    color: whitesmoke;
+}
+
+:any-link:active {
+    color: whitesmoke;
 }
