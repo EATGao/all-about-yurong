@@ -5,6 +5,8 @@
     align-items: center;
 }
 
+html {background-color: lightgray}
+
 .app_body {
     display: flex;
     margin-top: 35px;

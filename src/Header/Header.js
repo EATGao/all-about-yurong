@@ -3,9 +3,6 @@ import React from 'react'
 import HeaderOption from './HeaderOption'
 
 function Header() {
-  const onClick = () => {
-
-  }
 
   return (
     <div className='header'>

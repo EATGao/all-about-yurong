@@ -1,0 +1,11 @@
+.social__media:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+.social__media {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    align-items: center;
+}
