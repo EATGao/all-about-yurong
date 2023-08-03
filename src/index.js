@@ -6,7 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import Contact from './Pages/Contact/Contact';
 import About from './Pages/About/About';
 import Project from './Pages/Project/Project';
-import DiabetesRecommendationApp from './Pages/ProjectDetail/DiabetesRecommendationApp';
+import FoodCare from './Pages/ProjectDetail/FoodCare';
+import DailyReader from './Pages/ProjectDetail/DailyReader';
+import Linkedinclone from './Pages/ProjectDetail/LinkedinClone';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -30,8 +32,16 @@ const router = createBrowserRouter([
     element: <Project/>,
   },
   {
-    path: "project/diabetesrecommendationapp",
-    element: <DiabetesRecommendationApp/>,
+    path: "project/foodcare",
+    element: <FoodCare/>,
+  },
+  {
+    path: "project/dailyreader",
+    element: <DailyReader/>,
+  },
+  {
+    path: "project/linkedinclone",
+    element: <Linkedinclone/>,
   },
 ]);
 

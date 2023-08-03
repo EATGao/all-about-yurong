@@ -1,14 +1,14 @@
 import React from 'react'
 import Header from '../../Header/Header'
 
-function DiabetesRecommendationApp() {
+function FoodCare() {
   return (
     <div>
         <Header />
-        DiabetesRecommendationApp
+        FoodCare
 
     </div>
   )
 }
 
-export default DiabetesRecommendationApp
+export default FoodCare

@@ -8,7 +8,17 @@
     margin-left: 20px;
     border-radius: 12px;
 }
-  
+
+.flip__card__web {
+    margin-top: 0px;
+    background-color: transparent;
+    width: 900px;
+    height: 550px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
   /* This container is needed to position the front and back side */
 .flip__card__inner {
     position: relative;
@@ -20,9 +30,10 @@
 }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip__card:hover .flip__card__inner {
-    transform: rotateY(180deg);
-}
+  .flip__card:hover .flip__card__inner,
+  .flip__card__web:hover .flip__card__inner {
+      transform: rotateY(180deg);
+  }
   
   /* Position the front and back side */
 .flip__card__front, .flip__card__back {
@@ -42,7 +53,7 @@
   /* Style the front side (fallback if image is missing) */
 .flip__card__front {
     border-radius: 12px;
-    background-color: #bbb;
+    background-color: transparent;
     color: black;
 }
   

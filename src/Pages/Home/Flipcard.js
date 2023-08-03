@@ -2,10 +2,10 @@ import React from 'react'
 import './Flipcard.css'
 import { Link } from 'react-router-dom'
 
-function Flipcard({ imgSrc, backTitle, backDescription, backTime, routeTo}) {
+function Flipcard({ imgSrc, backTitle, backDescription, backTime, routeTo, isForWeb}) {
     return (
     <div>
-        <div className="flip__card">
+        <div className={isForWeb}>
           <div className="flip__card__inner">
             <div className="flip__card__front">
               <img src={imgSrc} alt="Avatar"/>
