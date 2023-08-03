@@ -6,6 +6,7 @@
     width: 100%;
     padding-top: 10px;
     border-bottom: 3px solid whitesmoke;
+    height: 75px;
 }
 
 .header__top {
@@ -16,8 +17,9 @@
 
 .header__top > h2 {
     color: whitesmoke;
-    font-size: 28px;
-    margin-bottom: 0;
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top: 10px;
 }
 
 .header__bottom {
@@ -28,4 +30,6 @@
 .header__options {
     display: flex;
     align-items: center;
+    color: whitesmoke;
+    margin-top: -10px;
 }
