@@ -4,8 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Contact from './Pages/Contact/Contact';
-import About from './Pages/About/About'
-import Project from './Pages/Project/Project'
+import About from './Pages/About/About';
+import Project from './Pages/Project/Project';
+import DiabetesRecommendationApp from './Pages/ProjectDetail/DiabetesRecommendationApp';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "project",
     element: <Project/>,
+  },
+  {
+    path: "project/diabetesrecommendationapp",
+    element: <DiabetesRecommendationApp/>,
   },
 ]);
 
