@@ -4,6 +4,15 @@ import HeaderOption from './HeaderOption'
 
 function Header() {
 
+  /*
+  const iconButtonStyle = {
+    width: '40px',
+    height: '40px',
+    marginTop: '-48px',
+    marginRight: '50px',
+  } */
+
+
   return (
     <div className='header'>
       
@@ -19,8 +28,15 @@ function Header() {
             <HeaderOption title='CONTACT'routeTo='/contact'/>
         </div>
       </div> 
-      
+
+{/*
+      <div className='header__mode__btn'>
+          <IconButton style={iconButtonStyle}>
+            <DarkModeIcon />
+          </IconButton>
+  </div> */}
     </div>
+
   )
 }
 
