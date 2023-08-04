@@ -27,6 +27,7 @@
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    border-radius: 12PX;
 }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -42,6 +43,7 @@
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
+    
 }
 
 .flip__card__front > img {
@@ -61,6 +63,7 @@
 .flip__card__back {
     border-radius: 12px;
     background-color: white;
+    border: 2px solid #E3E3E3;
     color: black;
     transform: rotateY(180deg);
     align-items: center;
@@ -94,7 +97,7 @@ button {
 #learn_more_btn {
     background-color: #76AF45;
     color: white;
-    border: 2px solid white;
+    border: 2px solid #E3E3E3;
     width: 150px;
     height: 50px;
     -webkit-transform: skew(-20deg);

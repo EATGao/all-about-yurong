@@ -8,20 +8,20 @@
 .header__option > h3 {
     font-size: 18px;
     font-weight: 500;
-    color: whitesmoke;
+    color: black;
 }
 
 :any-link:hover {
-    background-color: white;
-    color: burlywood !important;
+    background-color: black;
+    color: #E3E3E3 !important;
 }
 
 :any-link:visited {
-    color: whitesmoke;
+    color: black;
 }
 
 :any-link:active {
-    color: whitesmoke;
+    color: black;
 }
 
 :any-link {

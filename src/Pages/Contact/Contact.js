@@ -19,7 +19,7 @@ function Contact() {
     <div>
         <Header />
         <div className='contact'>
-          <h2>Leave me a message, I aim to get back within 2 business days. </h2>
+          <h2>Feel free to leave me a message, I aim to get back within 1-2 days :) </h2>
           <h3 className='sent_indicator'></h3>
           <div className='contact__message__form'>
             <form>

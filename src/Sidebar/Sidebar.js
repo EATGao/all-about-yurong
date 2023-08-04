@@ -20,10 +20,10 @@ function Sidebar() {
           <h3>👍What I can do now?</h3>
           <div className='sidebar__bottom__skills'>
             <ul>
-              <li>building websites using React.js</li>
-              <li>developing Android applications using Java/Kotlin in Android Studio</li>
-              <li>familiaring with SQL/NoSQL database, such as MySQL and MongoDB</li>
-              <li>version control - Git</li>
+              <li>building websites using <p id='keyword'>React.js</p></li>
+              <li>developing <p id='keyword'>Android</p> applications using <p id='keyword'>Java/Kotlin</p> in Android Studio</li>
+              <li>familiaring with <p id='keyword'>SQL/NoSQL database</p>, such as MySQL and MongoDB</li>
+              <li>version control, <p id='keyword'>Git</p></li>
               <li>working within a team</li>
               <li>learning new skills quickly</li>
             </ul>
@@ -32,10 +32,8 @@ function Sidebar() {
           <h3>👁️I'm open for any opportunities(paid/unpaid):</h3>
           <div className='sidebar__bottom__jobs'>
             <ul>
-              <li>Frontend developer</li>
               <li>Mobile application developer</li>
-              <li>Full-stack developer</li>
-              <li>Others(e.g. Web, Game, ...)</li>
+              <li>Frontend developer</li>
             </ul>
           </div>
         </div>

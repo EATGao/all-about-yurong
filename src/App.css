@@ -4,7 +4,16 @@
     flex-direction: column;
 }
 
-html {background-color: burlywood}
+html {
+    background-color: #E3E3E3;
+}
+
+#keyword {
+    color: #C60021;
+    margin: 0;
+    display: inline;
+    font-weight: 600;
+}
 
 .app_body {
     display: flex;

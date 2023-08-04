@@ -17,7 +17,7 @@ function Header() {
     <div className='header'>
       
       <div className='header__top'>
-        <h2>Welcome to ALL ABOUT YURONG!</h2>
+        <h2>Hi, I'm Yurong</h2>
       </div>
 
       <div className='header__bottom'>

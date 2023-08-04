@@ -16,7 +16,7 @@ function Flipcard({ imgSrc, backTitle, backDescription, backTime, routeTo, isFor
               <p id='description'>{backDescription}</p>
                 <Link to={routeTo}>
                     <div id="learn_more_btn">
-                        <button>Learn More</button>
+                        <button>SEE MORE</button>
                     </div>
                 </Link>
             </div>
