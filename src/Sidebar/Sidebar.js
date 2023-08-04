@@ -14,15 +14,15 @@ function Sidebar() {
 
         <div className='sidebar__bottom__intro'>
           <p>
-            I'm a fresh graduate in Master of IT from Monash University. Currently live in Sydney and seek jobs. In my spare time I love gaming and building my own projects.
+            Hi, I'm Yurong. I have completed my Master's degree majoring in Information Technology at Monash University in 2023. Currently live in Sydney and seek jobs. In my spare time, I love gaming and building my projects.
           </p>
 
-          <h3>👍I'm good at:</h3>
+          <h3>👍What I can do now?</h3>
           <div className='sidebar__bottom__skills'>
             <ul>
-              <li>developing website - using React.js</li>
-              <li>developing Android application - using Java/Kotlin and Android Studio</li>
-              <li>using SQL/NoSQL queries</li>
+              <li>building websites using React.js</li>
+              <li>developing Android applications using Java/Kotlin in Android Studio</li>
+              <li>familiaring with SQL/NoSQL database, such as MySQL and MongoDB</li>
               <li>version control - Git</li>
               <li>working within a team</li>
               <li>learning new skills quickly</li>
@@ -32,7 +32,7 @@ function Sidebar() {
           <h3>👁️I'm open for any opportunities(paid/unpaid):</h3>
           <div className='sidebar__bottom__jobs'>
             <ul>
-              <li>Front-end developer</li>
+              <li>Frontend developer</li>
               <li>Mobile application developer</li>
               <li>Full-stack developer</li>
               <li>Others(e.g. Web, Game, ...)</li>

@@ -29,6 +29,10 @@
     align-items: center;
 }
 
+.sidebar__bottom__intro > p {
+    text-align: justify;
+}
+
 .sidebar__bottom > h2 {
     color: black;
     font-weight: 600;
