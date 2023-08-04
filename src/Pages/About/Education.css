@@ -1,7 +1,11 @@
 .education {
     display: flex;
     flex-direction: column;
-    align-items: self-start
+    align-items: self-start;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .education__uni {
@@ -9,6 +13,7 @@
 }
 
 .education__uni > h2 {
+    margin-top: 0px;
     align-self: self-start;
     margin-bottom: 0;
 }

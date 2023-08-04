@@ -63,7 +63,7 @@
 .flip__card__back {
     border-radius: 12px;
     background-color: white;
-    border: 2px solid #E3E3E3;
+    border: 2px dashed #E3E3E3;
     color: black;
     transform: rotateY(180deg);
     align-items: center;

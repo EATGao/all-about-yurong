@@ -15,14 +15,16 @@ function About() {
       <div className='about'>   
           <div className='about__education'>
             <h1>Education</h1>
-            <Education degree='Master of Information Technology' 
-              university='Monash University (Australia)' 
-              time='July 2023'
-              honours='80.1/100 (HD)'/>
-            <Education degree='Bachelor of Business(Hons) Accounting' 
-              university='INTI University (Malaysia)' 
-              time='April 2021'
-              honours='Second Class Honours'/>
+            <div className='educations'>
+              <Education degree='Master of Information Technology' 
+                university='Monash University (Australia)' 
+                time='July 2023'
+                honours='80.1/100 (HD)'/>
+              <Education degree='Bachelor of Business(Hons) Accounting' 
+                university='INTI University (Malaysia)' 
+                time='April 2021'
+                honours='Second Class Honours'/>
+            </div>
           </div>
 
           <div className='about__technical'>

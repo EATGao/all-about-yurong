@@ -18,6 +18,7 @@ function MainPage() {
             backDescription='This is an Android application made in Kotlin. It is a part of research project.' 
             routeTo='/project/foodcare'/>
           <h3>Mobile Applications</h3>
+          <h3>Website</h3>
           <Flipcard imgSrc={DRMainPage}
             isForWeb='flip__card'
             backTitle='DailyReader' 

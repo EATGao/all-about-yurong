@@ -19,17 +19,17 @@ function Contact() {
     <div>
         <Header />
         <div className='contact'>
-          <h2>Feel free to leave me a message, I aim to get back within 1-2 days :) </h2>
+          <h2>Feel free to leave me a message, I will get back within <p id='keyword'>2 days :)</p> </h2>
           <h3 className='sent_indicator'></h3>
           <div className='contact__message__form'>
             <form>
-              <label for='email'>Email</label>
+              <label for='email'>Email <p id='keyword'>*</p></label>
               <input id='email' type='email' value={email} onChange={e => setEmail(e.target.value)} required/>
-              <label for='name'>Name</label>
+              <label for='name'>Name<p id='keyword'>*</p></label>
               <input id='name' type='text' value={name} onChange={e => setName(e.target.value)} required/>
-              <label for='subject'>Subject</label>
+              <label for='subject'>Subject<p id='keyword'>*</p></label>
               <input id='subject' type='text' value={subject} onChange={e => setSubject(e.target.value)} required/> 
-              <label for='message'>Message</label>
+              <label for='message'>Message<p id='keyword'>*</p></label>
               <input id='message' type='text' value={message} onChange={e => setMessage(e.target.value)} required/>
               <button id='send' onClick={send}>Send</button>
             </form>

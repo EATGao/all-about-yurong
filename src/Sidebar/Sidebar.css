@@ -6,7 +6,8 @@
     background-color: #f6f6f8;
     padding: 20px;
     height: fit-content;
-    margin-top: -20px;
+    margin-top: 10px;
+    border: 2px dashed black;
 }
 
 .sidebar__top {

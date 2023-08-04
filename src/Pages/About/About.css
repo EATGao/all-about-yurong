@@ -5,22 +5,44 @@
     width: 75%;
 }
 
+.about__education {
+    margin-top: 20px;
+}
+
+.educations {
+    margin-top: 20px;
+    border: 2px dashed black;
+    border-radius: 12px;
+    background-color: #F6F6F8;
+}
+
 .about__education > h1 {
-    margin-bottom: -10px;
+    margin: 2px 0px -10px 0px;
 } 
 
 .about__technical__skill {
     margin-bottom: -10px;
+    border: 2px dashed black;
+    border-radius: 12px;
+    background-color: #F6F6F8;
 }
 
 .about__social__media {
-    width: 50%;
+    width: 300px;
     display: flex;
+    border: 2px dashed black;
+    border-radius: 12px;
+    background-color: #F6F6F8;
 }
 
 .about__technical__skill > ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
     columns: 4;
-    margin-top: -10px;
+}
+
+.about__technical > h1 {
+    margin-bottom: 10px;
 }
 
 h1 {

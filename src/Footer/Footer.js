@@ -8,7 +8,7 @@ function Footer() {
             <p>@2023 Yurong Gao</p>
         </div>
         <div className='footer__right'>
-            <p>Built with ReactJS</p>
+            <p>Built with <p id='keyword'>ReactJS</p></p>
         </div>
     </div>
   )

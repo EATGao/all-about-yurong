@@ -1,6 +1,7 @@
 import './Header.css'
 import React from 'react'
 import HeaderOption from './HeaderOption'
+import Logo from '../Pictures/logo.png'
 
 function Header() {
 
@@ -17,7 +18,7 @@ function Header() {
     <div className='header'>
       
       <div className='header__top'>
-        <h2>Hi, I'm Yurong</h2>
+        <img src={Logo} />
       </div>
 
       <div className='header__bottom'>

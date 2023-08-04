@@ -5,8 +5,9 @@
     flex-direction: column;
     margin-left: 20px;
     border-radius: 12px;
-    margin-top: -20px;
+    margin-top: 10px;
     margin-right: 20px;
+    border: 2px dashed black;
 }
 
 .home__top > h2 {
