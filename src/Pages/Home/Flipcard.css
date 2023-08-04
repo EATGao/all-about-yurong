@@ -85,18 +85,18 @@ button {
     color: white;
     width: 150px;
     height: 50px;
-    font-weight: 700;
+    font-size: 17px;
+    font-weight: 850;
     border: #bbb;
     border-radius: 5px;
 }
 
 #learn_more_btn {
-    background-color: green;
+    background-color: #76AF45;
     color: white;
     border: 2px solid white;
     width: 150px;
     height: 50px;
-    font-weight: 700;
     -webkit-transform: skew(-20deg);
     -moz-transform: skew(-20deg);
     -o-transform: skew(-20deg);
@@ -109,6 +109,6 @@ button {
 button:hover {
     cursor: pointer;
     background-color: white;
-    color: green;
-    border: 2px solid green;
+    color: #76AF45;
+    border: 2px solid #76AF45;
 }
