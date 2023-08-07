@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Header from '../../Header/Header'
 import './Contact.css'
+import Footer from '../../Footer/Footer';
 
 function Contact() {
 
@@ -20,7 +21,7 @@ function Contact() {
         <Header />
         <div className='contact'>
           <h2>Feel free to leave me a message, I will get back within <p id='keyword'>2 days :)</p> </h2>
-          <h3 className='sent_indicator'></h3>
+          <h3 className='sent_indicator'> AAA </h3>
           <div className='contact__message__form'>
             <form>
               <label for='email'>Email <p id='keyword'>*</p></label>
@@ -35,6 +36,7 @@ function Contact() {
             </form>
           </div>
         </div>
+        <Footer />
     </div>
   )
 }

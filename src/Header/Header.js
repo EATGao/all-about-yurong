@@ -1,7 +1,8 @@
 import './Header.css'
 import React from 'react'
-import HeaderOption from './HeaderOption'
 import Logo from '../Pictures/logo.png'
+import { NavLink } from 'react-router-dom'
+import { useState } from 'react'
 
 function Header() {
 
@@ -13,21 +14,35 @@ function Header() {
     marginRight: '50px',
   } */
 
+  const [menuOpen, setMenuOpen] = useState(false);
+
 
   return (
     <div className='header'>
       
-      <div className='header__top'>
+      <div className='header__left'>
         <img src={Logo} />
       </div>
 
-      <div className='header__bottom'>
-        <div className='header__options'>
-            <HeaderOption title='HOME' routeTo='/'/>{' | '}
-            <HeaderOption title='ABOUT' routeTo='/about'/>{' | '}
-            <HeaderOption title='PROJECT' routeTo='/project'/>{' | '}
-            <HeaderOption title='CONTACT'routeTo='/contact'/>
-        </div>
+      <div className='header__right'>
+        <nav>
+          <div className='btn__area'>
+            <div className='menu' onClick={() => {
+              setMenuOpen(!menuOpen);
+            }}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <ul className={menuOpen ? "open" : ""}>
+            <li><NavLink to='/'>Home</NavLink></li>
+            <li><NavLink to='/about'>About</NavLink></li>
+            <li><NavLink to='/projects'>Projects</NavLink></li>
+            <li><NavLink to='/contact'>Contact</NavLink></li>
+            <li></li>
+          </ul>
+        </nav>
       </div> 
 
 {/*

@@ -1,25 +1,15 @@
-.app {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-}
-
 html {
-    background-color: #E3E3E3;
+    background: white;
+    font-family: monospace;
 }
 
 #keyword {
-    color: #C60021;
+    color: #F26B8A;
     margin: 0;
     display: inline;
     font-weight: 600;
 }
 
 .app_body {
-    display: flex;
-    margin-top: 35px;
-    max-width: 1200px;
-    align-self: center;
-    margin-left: -120px;
+    margin: 0;
 }
-

@@ -1,13 +1,13 @@
 .sidebar {
     display: flex;
-    flex: 0.4;
+    flex: 0.3;
     border-radius: 12px;
     flex-direction: column;
-    background-color: #f6f6f8;
+    background-color: rgba(255, 255, 255, .3);
     padding: 20px;
     height: fit-content;
     margin-top: 10px;
-    border: 2px dashed black;
+    box-shadow: 2px 4px 4px 4px rgba(0, 0, 0, .3);
 }
 
 .sidebar__top {
@@ -27,19 +27,29 @@
 }
 
 .sidebar__bottom {
+    justify-content: center;
     align-items: center;
 }
 
 .sidebar__bottom__intro > p {
     text-align: justify;
+    font-size: 15px;
+    font-family: monospace;
 }
 
-.sidebar__bottom > h2 {
-    color: black;
-    font-weight: 600;
-    text-align: center;
+.sidebar__bottom__intro {
+    text-align: justify;
+    font-size: 15px;
+    font-family: monospace;
 }
 
 li {
     margin-left: -10px;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: monospace;
 }

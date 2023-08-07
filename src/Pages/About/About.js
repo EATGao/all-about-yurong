@@ -6,6 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AttachEmailIcon from '@mui/icons-material/AttachEmail';
 import './About.css'
+import Footer from '../../Footer/Footer';
 
 function About() {
 
@@ -61,6 +62,7 @@ function About() {
 
           </div>
         </div>
+        <Footer />
     </div>
   )
 }

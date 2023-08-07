@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 
 function HeaderOption({ title, routeTo }) {
   return (
-    <div className='header__option'>
+    <li className='header__option'>
       <h3><Link to={routeTo}>{title}</Link></h3>
-    </div>
+    </li>
   )
 }
 
