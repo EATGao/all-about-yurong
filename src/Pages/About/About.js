@@ -1,10 +1,6 @@
 import React from 'react'
 import Header from '../../Header/Header'
 import Education from './Education'
-import SocialMedia from './SocialMedia'
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import AttachEmailIcon from '@mui/icons-material/AttachEmail';
 import './About.css'
 import Footer from '../../Footer/Footer';
 
@@ -50,16 +46,6 @@ function About() {
                 <li>MySQL</li>
               </ul>
             </div>
-            <h1>Found me at:</h1>
-            <div className='about__social__media'>
-              <SocialMedia IconButton={GitHubIcon} title='GitHub' isWeb={true} url='https://github.com/EATGao'/>
-              <SocialMedia IconButton={LinkedInIcon} title='Linkedin' isWeb={true} url='https://www.linkedin.com/in/yurong-gao-933b411a1/'/>
-              <SocialMedia IconButton={AttachEmailIcon} title='Email' isWeb={false} email='gaoyurong923@gmail.com'/>
-            </div>
-          </div>
-
-          <div className='about__spare__time'>
-
           </div>
         </div>
         <Footer />

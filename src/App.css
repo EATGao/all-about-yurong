@@ -1,9 +1,12 @@
 html {
     background: white;
+}
+
+* {
     font-family: monospace;
 }
 
-#keyword {
+strong {
     color: #F26B8A;
     margin: 0;
     display: inline;

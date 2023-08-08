@@ -1,13 +1,18 @@
 .social__media:hover {
-    color: aqua;
+    color: aquamarine;
     cursor: pointer;
 }
 
+
 .social__media {
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     margin-left: 20px;
     margin-right: 30px;
     align-items: center;
+}
+
+.social__media > p {
+    font-size: 20px;
+    font-weight: 600;
 }

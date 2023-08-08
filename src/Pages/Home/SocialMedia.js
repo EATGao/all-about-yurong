@@ -21,7 +21,7 @@ function SocialMedia({ IconButton, title, color, isWeb, url, email}) {
   return (
     <div className='social__media' onClick={handleClick}>
       <IconButton style={{color:color}} />
-      <h4>{title}</h4>
+      <p>{title}</p>
     </div>
     
   )
