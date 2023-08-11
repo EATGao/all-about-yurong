@@ -1,7 +1,16 @@
 import React from 'react'
 import './SocialMedia.css'
+import { makeStyles } from '@mui/styles'
 
-function SocialMedia({ IconButton, title, color, isWeb, url, email}) {
+function SocialMedia({ IconButton, title, isWeb, url, email}) {
+
+  const useStyles = makeStyles({
+    root: {
+      width: 30,
+      height: 30
+    }
+  });
+
   const handleClick = () => {
     if (isWeb) {
       window.open(url, '_blank')
@@ -18,9 +27,11 @@ function SocialMedia({ IconButton, title, color, isWeb, url, email}) {
     
   }
 
+  const classes = useStyles()
+
   return (
     <div className='social__media' onClick={handleClick}>
-      <IconButton style={{color:color}} />
+      <IconButton classes={{root: classes.root}}/>
       <p>{title}</p>
     </div>
     

@@ -21,7 +21,7 @@ function Header() {
     <div className='header'>
       
       <div className='header__left'>
-        <img src={Logo} />
+        <img src={Logo} alt='a logo'/>
       </div>
 
       <div className='header__right'>

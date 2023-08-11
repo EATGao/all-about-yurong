@@ -9,7 +9,7 @@ function About() {
   return (
     <div>
       <Header />
-      <div className='about'>   
+      <div className='about'> 
           <div className='about__education'>
             <h1>Education</h1>
             <div className='educations'>
@@ -25,26 +25,30 @@ function About() {
           </div>
 
           <div className='about__technical'>
-            <h1>Technical skills:</h1>
+            <h1>Technical skills</h1>
             <div className='about__technical__skill'>
-              <ul>
-                <li>Java</li>
-                <li>Kotlin</li>
-                <li>Kotor</li>
-                <li>Firebase</li>
-                <li>Room</li>
-                <li>Retrofit</li>
-                <li>React JS</li>
-                <li>Git</li>
-                <li>RESTful API</li>
-                <li>Material UI</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>JQuery</li>
-                <li>MongoDB</li>
-                <li>MySQL</li>
-              </ul>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>Java</p>
+                <p>Kotlin</p>
+                <p>Typescript</p>
+                <p>Node.js</p>
+                <p>React</p>
+                <p>Git</p>
+                <p>RESTful API</p>
+                <p>Material UI</p>
+                <p>Bootstrap</p>
+                <p>Firebase</p>
+                <p>JQuery</p>
+                <p>MongoDB</p>
+                <p>MySQL</p>
+            </div>
+          </div>
+          <div className='about__me'>
+            <h1>About me</h1>
+            <div className='about__self__description'>
+              
             </div>
           </div>
         </div>
