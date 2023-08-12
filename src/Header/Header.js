@@ -6,14 +6,6 @@ import { useState } from 'react'
 
 function Header() {
 
-  /*
-  const iconButtonStyle = {
-    width: '40px',
-    height: '40px',
-    marginTop: '-48px',
-    marginRight: '50px',
-  } */
-
   const [menuOpen, setMenuOpen] = useState(false);
 
 
@@ -21,7 +13,7 @@ function Header() {
     <div className='header'>
       
       <div className='header__left'>
-        <img src={Logo} alt='a logo'/>
+        <NavLink to='/'><img src={Logo} alt='a logo' id='logo'/></NavLink>
       </div>
 
       <div className='header__right'>
