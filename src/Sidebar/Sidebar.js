@@ -1,12 +1,12 @@
 import './Sidebar.css'
 import React from 'react'
-import SidebarSelfie from './sidebar_selfie.jpg'
+import Selfie from './sidebar_selfie.jpg'
 
 function Sidebar() {
   return (
     <div className='sidebar'>
       <div className='sidebar__top'>
-        <img src={SidebarSelfie} alt='selfie' />
+        <img src={Selfie} alt='selfie' />
       </div>
 
       <div className='sidebar__bottom'>
