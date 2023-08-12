@@ -25,8 +25,7 @@ function SocialMedia({ IconButton, title, isWeb, url, email}) {
 
   return (
     <div className='social__media' onClick={handleClick}>
-      <IconButton />
-
+      <IconButton style={{ width: 40, height: 50 }}/>
     </div>
     
   )
