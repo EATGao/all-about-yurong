@@ -20,17 +20,17 @@ function Contact() {
     <div>
         <Header />
         <div className='contact'>
-          <h2>Feel free to leave me a message, I will get back within <p id='keyword'>2 days :)</p> </h2>
-          <h3 className='sent_indicator'> AAA </h3>
+          <h2>Leave me a message, I will get back within <strong>2 days :)</strong> </h2>
+          <h3 className='sent_indicator'></h3>
           <div className='contact__message__form'>
             <form>
-              <label for='email'>Email <p id='keyword'>*</p></label>
+              <label htmlFor='email'>Email <strong>*</strong></label>
               <input id='email' type='email' value={email} onChange={e => setEmail(e.target.value)} required/>
-              <label for='name'>Name<p id='keyword'>*</p></label>
+              <label htmlFor='name'>Name<strong>*</strong></label>
               <input id='name' type='text' value={name} onChange={e => setName(e.target.value)} required/>
-              <label for='subject'>Subject<p id='keyword'>*</p></label>
+              <label htmlFor='subject'>Subject<strong>*</strong></label>
               <input id='subject' type='text' value={subject} onChange={e => setSubject(e.target.value)} required/> 
-              <label for='message'>Message<p id='keyword'>*</p></label>
+              <label htmlFor='message'>Message<strong>*</strong></label>
               <input id='message' type='text' value={message} onChange={e => setMessage(e.target.value)} required/>
               <button id='send' onClick={send}>Send</button>
             </form>

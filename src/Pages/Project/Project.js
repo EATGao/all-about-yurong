@@ -13,7 +13,19 @@ function Project() {
     <div> 
       <Header />
       <div className='project'>
-        <h2>Recent Projects:</h2>
+        <h1>Recent Projects:</h1>
+        <div className='project-container'>
+          diabetes one
+        </div>
+        <div className='project-container'>
+          clone one
+        </div>
+        <div className='project-container'>
+          daily reader one
+        </div>
+        <div className='project-container'>
+          inspection for you
+        </div>
 
       </div>
       <Footer />
