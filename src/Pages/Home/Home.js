@@ -13,11 +13,11 @@ function MainPage() {
       <div className='home__left'>
         <div className='home__description'>
           <div className='home__title__part'>
-            <h1>Hi, I'm Yurong. | Frontend Developer</h1>
+            Hi, I'm Yurong. | Frontend Developer
           </div>
-          <h2>Located in <strong>Sydney</strong> now.</h2>
-          <h2>Recently graduated from Monash University.</h2>
-          <h2>Love coding and gaming.</h2>  
+          <p>Located in <strong>Sydney</strong> now.</p>
+          <p>Recently graduated from Monash University.</p>
+          <p>Love coding and gaming.</p>  
         </div>
         <div className='home__social__media'>
           <SocialMedia IconButton={GitHubIcon} title='GitHub' isWeb={true} url='https://github.com/EATGao'/>

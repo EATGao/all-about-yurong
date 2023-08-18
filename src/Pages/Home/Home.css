@@ -4,13 +4,15 @@
     height: 100vh;
     background-color: white;
     align-items: center; 
+    justify-content: space-between;
 }
 
-.home_right {
+.home__right {
     display: flex;
     flex-direction: column;
     align-self: center;
     justify-content: center;
+    margin-right: 100px;
 }
 
 .home__description {
@@ -34,12 +36,15 @@
     width: 1000px;
 }
 
-.home__title__part > h1 {
+.home__title__part {
+    display: inline-block;
     font-size: 60px;
     font-weight: 500;
+    word-wrap: break-word;
 }
 
-.home__description > h2 {
+.home__description > p {
+    display: inline-block;
     font-size: 30px;
     font-weight: 500;
     line-height: 10px;
@@ -63,5 +68,9 @@
     .home__description > h2 {
         font-size: 20px;
         line-height: 20px;
+    }
+
+    .home__right {
+        display: none;
     }
 }
