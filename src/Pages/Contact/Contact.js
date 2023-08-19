@@ -50,7 +50,7 @@ function Contact() {
               <label htmlFor='subject'>Subject<strong>*</strong></label>
               <input id='subject' type='text' name='subject' value={subject} onChange={e => setSubject(e.target.value)} required/> 
               <label htmlFor='message'>Message<strong>*</strong></label>
-              <input id='message' type='text' name='message' value={message} onChange={e => setMessage(e.target.value)} required/>
+              <textarea id='message' type='text' name='message' value={message} onChange={e => setMessage(e.target.value)} required/>
               <input id='send' type='submit' value='Send' />
             </form>
           </div>
