@@ -2,7 +2,7 @@ import React from 'react'
 import './SocialMedia.css'
 
 
-function SocialMedia({ IconButton, title, isWeb, url, email}) {
+function SocialMedia({ IconButton, isWeb, url, email}) {
 
 
   const handleClick = () => {

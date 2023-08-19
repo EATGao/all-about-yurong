@@ -8,7 +8,7 @@ import About from './Pages/About/About';
 import Project from './Pages/Project/Project';
 import FoodCare from './Pages/ProjectDetail/FoodCare';
 import DailyReader from './Pages/ProjectDetail/DailyReader';
-import Linkedinclone from './Pages/ProjectDetail/LinkedinClone';
+import CloneProjects from './Pages/ProjectDetail/CloneProjects';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -32,16 +32,16 @@ const router = createBrowserRouter([
     element: <Project/>,
   },
   {
-    path: "project/foodcare",
+    path: "projects/foodcare",
     element: <FoodCare/>,
   },
   {
-    path: "project/dailyreader",
+    path: "projects/dailyreader",
     element: <DailyReader/>,
   },
   {
-    path: "project/linkedinclone",
-    element: <Linkedinclone/>,
+    path: "projects/cloneprojects",
+    element: <CloneProjects/>,
   },
 ]);
 
