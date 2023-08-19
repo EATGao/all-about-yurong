@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import './Home.css';
 import SocialMedia from './SocialMedia'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AttachEmailIcon from '@mui/icons-material/AttachEmail';
 import Flame from './Flame';
+import ContentMinHeight from '../../Util/ContentMinHeight'
 
 function MainPage() {
   
   return (
-    <div className='home'>
+    <div className='home' style={{ minHeight: ContentMinHeight() }}>
       <div className='home__left'>
         <div className='home__description'>
           <div className='home__title__part'>
