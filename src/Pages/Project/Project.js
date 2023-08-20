@@ -28,13 +28,12 @@ function Project() {
 - Integrating Google Maps to show the libraries around the user as well as the crow flies.
 - Interacting with OpenWeather API using Retrofit to provide users with weather information based on their current locations.
 " pictureLink={DailyReaderPic} accessLinks="/projects/dailyreader"></ProjectDescription>
-        <ProjectDescription title='Clone Projecrs' description="This is a collection of websites that mimics the layout and functions of some famous websites. 
+        <ProjectDescription title='Clone Projects' description="This is a collection of websites that mimics the layout and functions of some famous websites. 
 - Using Firebase Authentication to achieve login and signup functions.
 - Using Firebase Database to store each user's posts.
 - Using Redux to make the user's basic information accessible in each component.
 - Deployed to Firebase
 " pictureLink={ClonePic} accessLinks="/projects/cloneprojects" isWeb='true'></ProjectDescription>
-
       </div>
       <Footer />
     </div>

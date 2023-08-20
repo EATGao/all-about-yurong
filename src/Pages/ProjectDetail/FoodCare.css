@@ -1,0 +1,50 @@
+.foodcare {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    margin-bottom: 30px;
+}
+
+.foodcare__title {
+    margin-left: 100px;
+}
+
+.foodcare__introduction {
+    margin-left: 100px;
+    width: 700px;
+    white-space: pre-line;
+    padding: 20px 0px;
+}
+
+.foodcare__screenshots {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    align-self: center;
+}
+
+.foodcare__screenshot {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.foodcare__screenshot > img {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    width: 300px;
+    height: 600px;
+}
+
+.foodcare__tech > table, th, td {
+    margin-left: 100px;
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 5px 20px;
+    margin-bottom: 30px;
+}
