@@ -1,2 +1,5 @@
-a website developed using react.js, redux, and firebase
+# All about yurong
+It is my own portfolio website that developed using react.js and will be deployed to Firebase.
+
+
 
