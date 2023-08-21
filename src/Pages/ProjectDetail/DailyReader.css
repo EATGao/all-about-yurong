@@ -1,7 +1,22 @@
-.foodcare {
+.dailyreader {
     display: flex;
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
     margin-bottom: 30px;
+}
+
+.dailyreader__title {
+    margin-left: 100px;
+}
+
+.dailyreader__introduction {
+    margin-left: 100px;
+    width: 700px;
+    white-space: pre-line;
+    padding-bottom: 20px;
+}
+
+.dailyreader__tech {
+    margin-left: 100px;
 }
