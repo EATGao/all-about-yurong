@@ -4,10 +4,6 @@ import { NavLink } from 'react-router-dom'
 
 function ProjectDescription({title, description, pictureLink, accessLinks, isWeb}) {
 
-  const handleClick = () => {
-
-  };
-
   return (
     <div className='project__container'>
         <div className='project__title'>
@@ -21,7 +17,6 @@ function ProjectDescription({title, description, pictureLink, accessLinks, isWeb
         </div>
         <div className='project__access'>
           <button><NavLink to={accessLinks}>View Project Page</NavLink></button>
-          <button onClick={handleClick}>Source Code</button>
         </div>
     </div>
   )

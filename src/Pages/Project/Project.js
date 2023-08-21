@@ -14,13 +14,8 @@ function Project() {
     <div> 
       <Header />
       <div className='projects'>
-        <ProjectDescription title='Food Care' description="This is an Android application made in Kotlin. It is a research project and its core functionalities are: 
-- Reading data 24/7 from the user's continuous glucose meter using WorkManager.
-- Using a pattern recognition algorithm to detect drastic changes in the user's blood glucose level to provide related health recommendations automatically.
-- Recording the user/s exercise information (steps walked for a day) through the mobile phone sensor.
-- Integrating TensorFlow food recognition deep learning model to simplify the food name input process.
-- Connecting ChatGPT API using Ktor to provide the user with recommendations based on the user's condition.
-" pictureLink={FoodCarePic} accessLinks="/projects/foodcare"></ProjectDescription>
+        <ProjectDescription title='Food Care' description="This is an Android application that target people living with Type 2 diabetes since they need to be really careful when choosing proper food to better manager their conditions. 
+        The powerful analysis and generating new content of Generative AI tools provide a new solution to this problem. Thus, this application collects user's information and utilize the cutting-edge technology, ChatGPT, to generate food intake and health recommendations for Type 2 diabetes people." pictureLink={FoodCarePic} accessLinks="/projects/foodcare"></ProjectDescription>
         <ProjectDescription title='Daily Reader' description="This is an Android application made in Java. It is a teamwork project and its core functionalities are:
 - Using Firebase Authentication to achieve login and signup functions.
 - Applying LiveData to reflect the data change immediately. 

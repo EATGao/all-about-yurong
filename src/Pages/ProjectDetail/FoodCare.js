@@ -48,15 +48,15 @@ function FoodCare() {
           </div>
           <div className='foodcare__screenshots'>
             <div className='foodcare__screenshot'>
-              <img src={FoodCareMainPagePic} alt='Food care application main page picture'></img>
+              <img src={FoodCareMainPagePic} alt='Food care application main page'></img>
               <p>Main Page</p>
             </div>
             <div className='foodcare__screenshot'>
-              <img src={FoodCareFoodRecomPagePic} alt='Food care application food recommendation page picture'></img>
+              <img src={FoodCareFoodRecomPagePic} alt='Food care application food recommendation page'></img>
               <p>Food Recommendation</p>
             </div>
             <div className='foodcare__screenshot'>
-              <img src={FoodCareHealthRecomPagePic} alt='Food care application health recommendation page picture'></img>
+              <img src={FoodCareHealthRecomPagePic} alt='Food care application health recommendation page'></img>
               <p>Health Recommendation</p>
             </div>  
           </div>

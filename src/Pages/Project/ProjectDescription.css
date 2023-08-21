@@ -53,7 +53,7 @@
     grid-column-start: 1;
     grid-row-start: 3;
     grid-row-end: 3;
-    align-self: center;
+    align-self: top;
 }
 
 .project__access > button{
