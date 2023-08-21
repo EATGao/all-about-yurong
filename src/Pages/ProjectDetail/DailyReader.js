@@ -18,41 +18,43 @@ function DailyReader() {
       <Header />
       <SecondHeader />
       <div className='dailyreader'>
-        <div className='dailyreader__title'>
+        <div className='dailyreader__left'>
           <h1>Daily Reader</h1>
+          <div className='dailyreader__demo'>
+            Demo video
+          </div>
         </div>
-        <div className='dailyreader__introduction'>
-          {intro}
+        <div className='dailyreader__right'>
+          <div className='dailyreader__introduction'>
+            {intro}
+          </div>
+          <div className='dailyreader__tech'>
+            <table>
+                <tbody>
+                  <tr>
+                    <th>Platform</th>
+                    <td>Android Studio</td>
+                  </tr>
+                  <tr>
+                    <th>Language</th>                
+                    <td>Java</td> 
+                  </tr>
+                  <tr>
+                    <th>Tech used</th>
+                    <td>Room, WorkManager, ViewModel, LiveData, Navigation Drawer, Data Binding</td>
+                  </tr>
+                  <tr>
+                    <th>Others</th>
+                    <td>Firebase Authentication, Firebase Database, GoogleMap API, OpenWeather API, Retrofit</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className='dailyreader__access'>
+              <button><a href='https://github.com/Michael-Vio/DailyReader' target='_blank' rel="noreferrer">Source code</a></button>
+            </div>
+          </div>
         </div>
-        <div className='dailyreader__tech'>
-          <table>
-              <tbody>
-              <tr>
-                <th>Platform</th>
-                <td>Android Studio</td>
-              </tr>
-              <tr>
-                <th>Language</th>                
-                <td>Java</td> 
-              </tr>
-              <tr>
-                <th>Tech used</th>
-                <td>Room, WorkManager, ViewModel, LiveData, Navigation Drawer, Data Binding</td>
-              </tr>
-              <tr>
-                <th>Others</th>
-                <th>Firebase Authentication, Firebase Database, GoogleMap API, OpenWeather API, Retrofit</th>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div className='dailyreader__demo'>
-
-        </div>
-        <div className='cloneprojects__access'>
-          <button><a href='https://github.com/Michael-Vio/DailyReader' target='_blank' rel="noreferrer">Source code</a></button>
-        </div>
-      </div>
       <Footer/>
     </div>
   )

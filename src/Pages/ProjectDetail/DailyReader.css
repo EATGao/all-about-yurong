@@ -1,29 +1,25 @@
 .dailyreader {
     display: flex;
-    flex-direction: column;
     width: 100%;
     min-height: 100vh;
-    margin-bottom: 30px;
+    margin: 50px;
+    justify-content: space-evenly;
 }
 
-.dailyreader__title {
+.dailyreader__left {
     margin-left: 100px;
 }
 
 .dailyreader__introduction {
-    margin-left: 100px;
+    margin-top: 30px;
     width: 700px;
     white-space: pre-line;
     padding-bottom: 20px;
 }
 
-.dailyreader__tech {
-    margin-left: 100px;
-}
-
 .dailyreader__access {
     display: flex;
-    margin-left: 100px;
+    margin-top: 20px;
 }
 
 .dailyreader__access > button{
@@ -32,7 +28,6 @@
     font-size: 20px;
     height: 40px;
     border: none;
-    margin: 10px 30px 0px 0px;
     border-radius: 15px;
     color: grey;
     background-color: aquamarine;
