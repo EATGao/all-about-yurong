@@ -20,12 +20,8 @@ function Project() {
         <ProjectDescription title='Daily Reader' description="This is an Android application made in Java. It is a teamwork project. This main objectives of this reader application are helping users to develop reading behavior by let them set 
         daily reading goals in pages for each book, tracking the reading behaviors, as well as provide them with the nearest library and weather information based on their location."
         pictureLink={DailyReaderPic} accessLinks={"/projects/dailyreader"}></ProjectDescription>
-        <ProjectDescription title='Clone Projects' description="This is a collection of websites that mimics the layout and functions of some famous websites. 
-- Using Firebase Authentication to achieve login and signup functions.
-- Using Firebase Database to store each user's posts.
-- Using Redux to make the user's basic information accessible in each component.
-- Deployed to Firebase
-" pictureLink={ClonePic} accessLinks="/projects/cloneprojects" isWeb='true'></ProjectDescription>
+        <ProjectDescription title='Clone Projects' description="This a website that contains a few clone websites that developed using React or purely JavaScript and basic HTML and CSS. The purpose of website is to learn the functions and layout design from a series of the most
+        famous websites." pictureLink={ClonePic} accessLinks="/projects/cloneprojects" isWeb='true'></ProjectDescription>
       </div>
       <Footer />
     </div>

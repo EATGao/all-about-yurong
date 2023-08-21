@@ -1,4 +1,4 @@
-.dailyreader {
+.cloneprojects {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -6,27 +6,27 @@
     margin-bottom: 30px;
 }
 
-.dailyreader__title {
+.cloneprojects__title {
     margin-left: 100px;
 }
 
-.dailyreader__introduction {
+.cloneprojects__introduction {
     margin-left: 100px;
     width: 700px;
     white-space: pre-line;
     padding-bottom: 20px;
 }
 
-.dailyreader__tech {
+.cloneprojects__tech {
     margin-left: 100px;
 }
 
-.dailyreader__access {
+.cloneprojects__access {
     display: flex;
     margin-left: 100px;
 }
 
-.dailyreader__access > button{
+.cloneprojects__access > button{
     cursor: pointer;
     display: inline-block;
     font-size: 20px;
@@ -39,14 +39,14 @@
     box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
 }
 
-.dailyreader__access > button:hover {
+.cloneprojects__access > button:hover {
     color: grey;
     background-color: rgba(127, 255, 212, .5);
     box-shadow: 0 6px 6px rgba(0, 0, 0, .3);
     transition: all 300ms ease-out;
 }
 
-.dailyreader__access > button > a, a:visited {
+.cloneprojects__access > button > a, a:visited {
     cursor: pointer;
     color: grey;
     text-decoration: none;
