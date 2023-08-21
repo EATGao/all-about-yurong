@@ -46,7 +46,7 @@ function DailyReader() {
 
         </div>
         <div className='cloneprojects__access'>
-          <button><a href='https://github.com/Michael-Vio/DailyReader' target='_blank'>Source code</a></button>
+          <button><a href='https://github.com/Michael-Vio/DailyReader' target='_blank' rel="noreferrer">Source code</a></button>
         </div>
       </div>
       <Footer/>

@@ -41,8 +41,8 @@ function CloneProjects() {
           
         </div>
         <div className='cloneprojects__access'>
-          <button><a href='https://linkedin-clone-ac495.web.app/' target='_blank'>View the website</a></button>
-          <button><a href='https://github.com/EATGao/HTML-CSS-JS-Project-Practice' target='_blank'>Source code</a></button>
+          <button><a href='https://linkedin-clone-ac495.web.app/' target='_blank' rel="noreferrer">View the website</a></button>
+          <button><a href='https://github.com/EATGao/HTML-CSS-JS-Project-Practice' target='_blank' rel="noreferrer">Source code</a></button>
         </div>
       </div>
       <Footer/>
