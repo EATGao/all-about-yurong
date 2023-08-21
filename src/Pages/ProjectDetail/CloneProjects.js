@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
-import './CloneProjects.css'
+import './CloneProjects.css';
+import SecondHeader from '../../Header/SecondHeader';
 
 function CloneProjects() {
   const intro = (
@@ -14,6 +15,7 @@ function CloneProjects() {
   return (
     <div>
       <Header />
+      <SecondHeader />
       <div className='cloneprojects'>
         <div className='cloneprojects__title'>
           <h1>Clone Projects</h1>
@@ -23,18 +25,20 @@ function CloneProjects() {
         </div>
         <div className='cloneprojects__tech'>
           <table>
-            <tr>
-              <th>Platform</th>
-              <td>VS code</td>
-            </tr>
-            <tr>
-              <th>Language</th>                
-              <td>JavaScript, HTML, CSS, JSX</td> 
-            </tr>
-            <tr>
-              <th>Tech used</th>
-              <td>Firebase Authentication, Firebase Database, Redux, React Hooks</td>
-            </tr>
+            <tbody>
+              <tr>
+                <th>Platform</th>
+                <td>VS code</td>
+              </tr>
+              <tr>
+                <th>Language</th>                
+                <td>JavaScript, HTML, CSS, JSX</td> 
+              </tr>
+              <tr>
+                <th>Tech used</th>
+                <td>Firebase Authentication, Firebase Database, Redux, React Hooks</td>
+              </tr>
+            </tbody>
           </table>
         </div>
         <div className='cloneprojects__demo'>

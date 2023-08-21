@@ -1,7 +1,8 @@
-import React from 'react'
-import Header from '../../Header/Header'
+import React from 'react';
+import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
-import './DailyReader.css'
+import './DailyReader.css';
+import SecondHeader from '../../Header/SecondHeader';
 
 function DailyReader() {
   const intro = (
@@ -15,6 +16,7 @@ function DailyReader() {
   return (
     <div>
       <Header />
+      <SecondHeader />
       <div className='dailyreader'>
         <div className='dailyreader__title'>
           <h1>Daily Reader</h1>
@@ -24,22 +26,24 @@ function DailyReader() {
         </div>
         <div className='dailyreader__tech'>
           <table>
-            <tr>
-              <th>Platform</th>
-              <td>Android Studio</td>
-            </tr>
-            <tr>
-              <th>Language</th>                
-              <td>Java</td> 
-            </tr>
-            <tr>
-              <th>Tech used</th>
-              <td>Room, WorkManager, ViewModel, LiveData, Navigation Drawer, Data Binding</td>
-            </tr>
-            <tr>
-              <th>Others</th>
-              <th>Firebase Authentication, Firebase Database, GoogleMap API, OpenWeather API, Retrofit</th>
-            </tr>
+              <tbody>
+              <tr>
+                <th>Platform</th>
+                <td>Android Studio</td>
+              </tr>
+              <tr>
+                <th>Language</th>                
+                <td>Java</td> 
+              </tr>
+              <tr>
+                <th>Tech used</th>
+                <td>Room, WorkManager, ViewModel, LiveData, Navigation Drawer, Data Binding</td>
+              </tr>
+              <tr>
+                <th>Others</th>
+                <th>Firebase Authentication, Firebase Database, GoogleMap API, OpenWeather API, Retrofit</th>
+              </tr>
+            </tbody>
           </table>
         </div>
         <div className='dailyreader__demo'>

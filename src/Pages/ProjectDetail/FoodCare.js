@@ -1,10 +1,11 @@
 import React from 'react'
 import Header from '../../Header/Header'
-import Footer from '../../Footer/Footer';
+import Footer from '../../Footer/Footer'
 import './FoodCare.css'
 import FoodCareMainPagePic from '../../Pictures/FoodCare/foodcare_mainpage.jpg'
 import FoodCareFoodRecomPagePic from '../../Pictures/FoodCare/foodcare_frecom.jpg'
 import FoodCareHealthRecomPagePic from '../../Pictures/FoodCare/foodcare_hrecom.jpg'
+import SecondHeader from '../../Header/SecondHeader'
 
 function FoodCare() {
 
@@ -19,6 +20,7 @@ function FoodCare() {
   return (
     <div>
         <Header />
+        <SecondHeader />
         <div className='foodcare'>
           <div className='foodcare__title'>
             <h1>Food Care</h1>
@@ -28,22 +30,24 @@ function FoodCare() {
           </div>
           <div className='foodcare__tech'>
             <table>
-              <tr>
-                <th>Platform</th>
-                <td>Android Studio</td>
-              </tr>
-              <tr>
-                <th>Language</th>                
-                <td>Kotlin</td> 
-              </tr>
-              <tr>
-                <th>AI models</th>
-                <td>gpt-3.5-turbo, TensorFlow Food V1.1</td>
-              </tr>
-              <tr>
-                <th>Others</th>
-                <td>WorkManager, mobile sensor, Ktor</td>
-              </tr>
+            <tbody>
+                <tr>
+                  <th>Platform</th>
+                  <td>Android Studio</td>
+                </tr>
+                <tr>
+                  <th>Language</th>                
+                  <td>Kotlin</td> 
+                </tr>
+                <tr>
+                  <th>AI models</th>
+                  <td>gpt-3.5-turbo, TensorFlow Food V1.1</td>
+                </tr>
+                <tr>
+                  <th>Others</th>
+                  <td>WorkManager, mobile sensor, Ktor</td>
+                </tr>
+              </tbody>
             </table>
           </div>
           <div className='foodcare__screenshots'>
