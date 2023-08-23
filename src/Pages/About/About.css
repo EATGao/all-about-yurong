@@ -27,13 +27,17 @@
     transition: background-size .5s ease;
 } 
 
-
 .about__education > h1:hover {
     background-size: 20% 10px;
 }
 
+.about__technical__skills {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
 .about__technical__skill {
-    margin-bottom: -10px;
+    margin-bottom: 0px;
     border-radius: 12px;
     padding-left: 10px;
     padding-right: 10px;

@@ -11,26 +11,37 @@ function About() {
     <div>
       <Header />
       <div className='about'> 
-
           <div className='about__technical'>
             <h1>Technical skills</h1>
-            <div className='about__technical__skill'>
+            <div className='about__technical__skills'>
+              <div className='about__technical__skill'>
+                Frontend:{' '}
                 <p>HTML</p>
                 <p>CSS</p>
                 <p>JavaScript</p>
-                <p>Java</p>
-                <p>Kotlin</p>
                 <p>Typescript</p>
                 <p>Node.js</p>
                 <p>React</p>
-                <p>Git</p>
                 <p>JQuery</p>
-                <p>RESTful API</p>
-                <p>Material UI</p>
                 <p>Bootstrap</p>
+              </div>
+              <div className='about__technical__skill'>
+                Mobile:{' '}
+                <p>Java</p>
+                <p>Kotlin</p>
                 <p>Firebase</p>
+                <p>Jetpack Architecture Components</p>
+              </div>
+              <div className='about__technical__skill'>
+                Database:{' '}
                 <p>MongoDB</p>
                 <p>MySQL</p>
+              </div>
+              <div className='about__technical__skill'>
+                Others:{' '}
+                <p>Git</p>
+                <p>RESTful API</p>
+              </div>
             </div>
           </div>
           <div className='about__education'>
