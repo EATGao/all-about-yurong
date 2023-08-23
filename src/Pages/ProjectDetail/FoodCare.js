@@ -2,19 +2,19 @@ import React from 'react'
 import Header from '../../Header/Header'
 import Footer from '../../Footer/Footer'
 import './FoodCare.css'
-import FoodCareMainPagePic from '../../Pictures/FoodCare/foodcare_mainpage.jpg'
-import FoodCareFoodRecomPagePic from '../../Pictures/FoodCare/foodcare_frecom.jpg'
-import FoodCareHealthRecomPagePic from '../../Pictures/FoodCare/foodcare_hrecom.jpg'
+import FoodCareDemo from '../../Pictures/FoodCare/foodcare_demo.mp4'
+import FoodCareArchitecture from '../../Pictures/FoodCare/foodcare_arch.png'
 import SecondHeader from '../../Header/SecondHeader'
 
 function FoodCare() {
-
-  const intro = (<>This is an Android application made in Kotlin. It is a part of the research project and its core functionalities are:{'\n'}
+  const aims = (<>1. Generative AI tools and prompt engineering shifted many industries, including healthcare.{'\n'}
+  2. Health-related recommendations within are's reach can help people living with diabetes to better manage their conditions.{'\n'}</>)
+  const functionalities = (<>
   - Reading data 24/7 from the user's continuous glucose meter{'\n'}
   - Detecting drastic changes in the user's blood glucose level{'\n'}
   - Tracking the user/s exercise information (steps walked for a day){'\n'}
   - Allowing two options to enter the food name which are taking a picture and manually input.{'\n'}
-  - Using ChatGPT to analyze users' conditions and offer relevant recommendations.</>);
+  - Using ChatGPT to analyze users' conditions and offer relevant recommendations.{'\n'}</>);
 
 
   return (
@@ -22,47 +22,49 @@ function FoodCare() {
         <Header />
         <SecondHeader />
         <div className='foodcare'>
-          <div className='foodcare__title'>
-            <h1>Food Care</h1>
-          </div>
           <div className='foodcare__introduction'>
-            {intro}
-          </div>
-          <div className='foodcare__tech'>
-            <table>
-            <tbody>
-                <tr>
-                  <th>Platform</th>
-                  <td>Android Studio</td>
-                </tr>
-                <tr>
-                  <th>Language</th>                
-                  <td>Kotlin</td> 
-                </tr>
-                <tr>
-                  <th>AI models</th>
-                  <td>gpt-3.5-turbo, TensorFlow Food V1.1</td>
-                </tr>
-                <tr>
-                  <th>Others</th>
-                  <td>WorkManager, mobile sensor, Ktor</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div className='foodcare__screenshots'>
-            <div className='foodcare__screenshot'>
-              <img src={FoodCareMainPagePic} alt='Food care application main page'></img>
-              <p>Main Page</p>
+            <h1>Food Care</h1>
+            <h2>Why we built this?</h2>
+            <div className='foodcare__aims'>
+              {aims}
             </div>
-            <div className='foodcare__screenshot'>
-              <img src={FoodCareFoodRecomPagePic} alt='Food care application food recommendation page'></img>
-              <p>Food Recommendation</p>
+            <h2>Functionalities</h2>
+            <div className='foodcare__funcs'>
+              {functionalities}
             </div>
-            <div className='foodcare__screenshot'>
-              <img src={FoodCareHealthRecomPagePic} alt='Food care application health recommendation page'></img>
-              <p>Health Recommendation</p>
-            </div>  
+            <div className='foodcare__tech'>
+              <h2>Tech used</h2>
+              <table>
+              <tbody>
+                  <tr>
+                    <th>Platform</th>
+                    <td>Android Studio</td>
+                  </tr>
+                  <tr>
+                    <th>Language</th>                
+                    <td>Kotlin</td> 
+                  </tr>
+                  <tr>
+                    <th>AI models</th>
+                    <td>gpt-3.5-turbo, TensorFlow Food V1.1</td>
+                  </tr>
+                  <tr>
+                    <th>Others</th>
+                    <td>WorkManager, mobile sensor, Ktor</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className='foodcare__arch'>
+              <h2>Application Architecture</h2>
+              <img src={FoodCareArchitecture} alt='food care application architecture'></img>
+            </div>
+          </div>
+          <div className='foodcare__demo'>
+            <h2>Application Demo</h2>
+            <video autoPlay loop muted>
+              <source type="video/mp4" src={FoodCareDemo}/>
+            </video>
           </div>
         </div>
         <Footer/>
