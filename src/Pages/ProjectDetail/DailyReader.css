@@ -6,15 +6,20 @@
     justify-content: space-evenly;
 }
 
-.dailyreader__left {
-    margin-left: 100px;
+.dailyreader__demo {
+    width: 300px;
+    height: auto;
+}
+
+.dailyreader__demo > video {
+    width: 100%;
+    height: auto;
 }
 
 .dailyreader__introduction {
     margin-top: 30px;
     width: 700px;
     white-space: pre-line;
-    padding-bottom: 20px;
 }
 
 .dailyreader__access {
@@ -45,4 +50,8 @@
     cursor: pointer;
     color: grey;
     text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
 }
