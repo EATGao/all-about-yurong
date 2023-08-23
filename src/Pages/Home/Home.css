@@ -16,12 +16,9 @@
 }
 
 .home__description {
-    padding-left: 100px;
-}
-
-.home__title__part {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    padding-left: 100px;
 }
 
 .home__social__media {
