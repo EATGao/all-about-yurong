@@ -23,13 +23,16 @@
 
 .cloneprojects__access {
     display: flex;
-    margin-left: 100px;
+    flex-direction: column;
+    margin-left: 50px;
+    justify-content: center;
 }
 
 .cloneprojects__access > button{
     cursor: pointer;
     display: inline-block;
     font-size: 20px;
+    width: 200px;
     height: 40px;
     border: none;
     margin: 10px 30px 0px 0px;
@@ -50,4 +53,20 @@
     cursor: pointer;
     color: grey;
     text-decoration: none;
+}
+
+.cloneprojects__demos {
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.cloneprojects__demo {
+    display: flex;
+    width: 700px;
+    height: auto;
+}
+
+.cloneprojects__demo > video {
+    width: 100%;
+    height: auto;
 }

@@ -3,6 +3,7 @@ import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
 import './CloneProjects.css';
 import SecondHeader from '../../Header/SecondHeader';
+import AmazonDemo from '../../Pictures/Clone/amazon_demo.mp4'
 
 function CloneProjects() {
   const intro = (
@@ -21,9 +22,11 @@ function CloneProjects() {
           <h1>Clone Projects</h1>
         </div>
         <div className='cloneprojects__introduction'>
+          <h2>Project description</h2>
           {intro}
         </div>
         <div className='cloneprojects__tech'>
+          <h2>Tech used</h2>
           <table>
             <tbody>
               <tr>
@@ -41,13 +44,22 @@ function CloneProjects() {
             </tbody>
           </table>
         </div>
-        <div className='cloneprojects__demo'>
-          
+
+        <div className='cloneprojects__demos'>
+          <h2>Project demos</h2>
+          <div className='cloneprojects__demo'>
+            <video autoPlay muted loop>
+              <source type='video/mp4' src={AmazonDemo}></source>
+            </video>
+            <div className='cloneprojects__access'>
+              <h3>Amazon clone project</h3>
+              <button><a href='https://linkedin-clone-ac495.web.app/' target='_blank' rel="noreferrer">View the website</a></button>
+              <button><a href='https://github.com/EATGao/HTML-CSS-JS-Project-Practice/tree/master/JSProjects/Amazon-clone' target='_blank' rel="noreferrer">Check source code</a></button>
+            </div>
+          </div>
         </div>
-        <div className='cloneprojects__access'>
-          <button><a href='https://linkedin-clone-ac495.web.app/' target='_blank' rel="noreferrer">View the website</a></button>
-          <button><a href='https://github.com/EATGao/HTML-CSS-JS-Project-Practice' target='_blank' rel="noreferrer">Source code</a></button>
-        </div>
+
+        
       </div>
       <Footer/>
     </div>
