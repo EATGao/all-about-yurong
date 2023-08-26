@@ -22,8 +22,7 @@ function About() {
                 <p>Typescript</p>
                 <p>Node.js</p>
                 <p>React</p>
-                <p>JQuery</p>
-                <p>Bootstrap</p>
+                <p>AJAX</p>
               </div>
               <div className='about__technical__skill'>
                 Mobile:{' '}
@@ -31,11 +30,6 @@ function About() {
                 <p>Kotlin</p>
                 <p>Firebase</p>
                 <p>Jetpack Architecture Components</p>
-              </div>
-              <div className='about__technical__skill'>
-                Database:{' '}
-                <p>MongoDB</p>
-                <p>MySQL</p>
               </div>
               <div className='about__technical__skill'>
                 Others:{' '}
