@@ -1,0 +1,30 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, .3);
+    box-shadow: 4px 0px 4px 4px rgba(0, 0, 0, .3);
+    margin-top: auto;
+}
+
+.footer__left {
+    margin-left: 50px;
+}
+
+.footer__right {
+    margin-right: 50px;
+}
+
+.footer__right > p {
+    color: darkgray;
+    font-size: 15px;
+    font-weight: 200;
+    font-family: monospace;
+}
+
+.footer__left > p {
+    color: darkgray;
+    font-size: 15px;
+    font-weight: 200;
+    font-family: monospace;
+}
