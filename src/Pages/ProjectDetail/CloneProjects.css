@@ -11,10 +11,13 @@
 }
 
 .cloneprojects__introduction {
+    display: flex;
+}
+
+.cloneprojects__description {
     margin-left: 100px;
     width: 700px;
     white-space: pre-line;
-    padding-bottom: 20px;
 }
 
 .cloneprojects__tech {
@@ -24,7 +27,8 @@
 .cloneprojects__access {
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
+    margin-top: 30px;
+    margin-left: 100px;
     justify-content: center;
 }
 

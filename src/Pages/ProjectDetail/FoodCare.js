@@ -61,7 +61,6 @@ function FoodCare() {
             </div>
           </div>
           <div className='foodcare__demo'>
-            <h2>Application Demo</h2>
             <video autoPlay loop muted>
               <source type="video/mp4" src={FoodCareDemo}/>
             </video>

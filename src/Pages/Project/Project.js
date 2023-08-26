@@ -20,8 +20,8 @@ function Project() {
         <ProjectDescription title='Daily Reader' description="This is an Android application made in Java. It is a teamwork project. This main objectives of this reader application are helping users to develop reading behavior by let them set 
         daily reading goals in pages for each book, tracking the reading behaviors, as well as provide them with the nearest library and weather information based on their location."
         pictureLink={DailyReaderPic} accessLinks={"/projects/dailyreader"}></ProjectDescription>
-        <ProjectDescription title='Clone Projects' description="This a website that contains a few clone websites that developed using React or purely JavaScript and basic HTML and CSS. The purpose of website is to learn the functions and layout design from a series of the most
-        famous websites." pictureLink={ClonePic} accessLinks="/projects/cloneprojects" isWeb='true'></ProjectDescription>
+        <ProjectDescription title='Amazon Clone' description="This a clone website that mimic the basic layout and functions of Amazon, such as adding, updating, and deleting items to/in/from the shopping cart, calculate the total price. It is developed purely in HTML, CSS and JavaScript."
+        pictureLink={ClonePic} accessLinks="/projects/cloneprojects" isWeb='true'></ProjectDescription>
       </div>
       <Footer />
     </div>
