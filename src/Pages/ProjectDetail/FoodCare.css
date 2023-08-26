@@ -13,6 +13,7 @@
 }
 
 .foodcare__tech > table, th, td {
+    width: 50%;
     border: 1px solid;
     border-collapse: collapse;
     padding: 5px 20px;
@@ -31,3 +32,20 @@
     height: auto;
 }
 
+@media (max-width: 480px) {
+    .foodcare {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foodcare__introduction {
+        width: 90%;
+    }
+
+    .foodcare__demo {
+        margin-top: 20px;
+        margin-left: 15px;
+        width: 80%;
+        height: auto;
+    }
+}

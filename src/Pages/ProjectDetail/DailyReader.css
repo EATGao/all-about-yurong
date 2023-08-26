@@ -55,3 +55,16 @@
 table {
     border-collapse: collapse;
 }
+
+@media (max-width: 480px) {
+    .dailyreader {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    .dailyreader__introduction {
+        width: 90%;
+    }
+}

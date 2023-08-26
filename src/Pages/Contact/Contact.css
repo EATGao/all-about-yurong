@@ -60,7 +60,6 @@
     width: 150px;
     font-size: 25px;
     font-weight: 900;
-    
     height: 50px;
     border: none;
     margin-top: 20px;
@@ -76,5 +75,12 @@
     color: aquamarine;
     box-shadow: 0 6px 6px rgba(0, 0, 0, .3);
     transition: all 300ms ease-out;
+}
+
+@media (max-width: 480px) {
+    .contact__message__form > form > input, textarea{
+        width: 75vw;
+        height: 25px;
+    }
 }
 

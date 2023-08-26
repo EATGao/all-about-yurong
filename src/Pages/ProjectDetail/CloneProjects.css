@@ -4,10 +4,7 @@
     width: 100%;
     min-height: 100vh;
     margin: 50px;
-}
-
-.cloneprojects__title {
-    margin-left: 100px;
+    margin-left: 50px 50px 50px 100px;
 }
 
 .cloneprojects__introduction {
@@ -15,20 +12,14 @@
 }
 
 .cloneprojects__description {
-    margin-left: 100px;
     width: 700px;
     white-space: pre-line;
-}
-
-.cloneprojects__tech {
-    margin-left: 100px;
 }
 
 .cloneprojects__access {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    margin-left: 100px;
     justify-content: center;
 }
 
@@ -61,7 +52,6 @@
 
 .cloneprojects__demos {
     margin-top: 30px;
-    margin-left: 100px;
 }
 
 .cloneprojects__demo {
@@ -73,4 +63,38 @@
 .cloneprojects__demo > video {
     width: 100%;
     height: auto;
+}
+
+.go__back__btn {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .cloneprojects {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+        margin: 5px;
+    }
+
+    .cloneprojects__introduction {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cloneprojects__demo {
+        display: flex;
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .cloneprojects__description {
+        width: 100%;
+        white-space: pre-line;
+    }
+
+    .go__back__btn {
+        display: initial;
+    }
 }

@@ -4,6 +4,7 @@ import Footer from '../../Footer/Footer';
 import './DailyReader.css';
 import SecondHeader from '../../Header/SecondHeader';
 import DailyReaderDemo from '../../Pictures/DailyReader/dailyreader_demo.mp4'
+import { NavLink } from 'react-router-dom'
 
 function DailyReader() {
   const aims = (<>1. Help users to build daily reading behaviors.{'\n'} 2. build a comfortable reading atmosphere for users{'\n'}</>)
@@ -19,6 +20,9 @@ function DailyReader() {
     <div>
       <Header />
       <SecondHeader />
+      <div className='go__back__btn'>
+        <NavLink to='/projects'>Back to Projects Page</NavLink>
+      </div>
       <div className='dailyreader'>
         <div className='dailyreader__left'>
           <h1>Daily Reader</h1>

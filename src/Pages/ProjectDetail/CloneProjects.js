@@ -4,6 +4,7 @@ import Footer from '../../Footer/Footer';
 import './CloneProjects.css';
 import SecondHeader from '../../Header/SecondHeader';
 import AmazonDemo from '../../Pictures/Clone/amazon_demo.mp4'
+import { NavLink } from 'react-router-dom'
 
 function CloneProjects() {
   const intro = (
@@ -17,6 +18,9 @@ function CloneProjects() {
     <div>
       <Header />
       <SecondHeader />
+      <div className='go__back__btn'>
+        <NavLink to='/projects'>Back to Projects Page</NavLink>
+      </div>
       <div className='cloneprojects'>
         <div className='cloneprojects__title'>
           <h1>Amazon Clone</h1>

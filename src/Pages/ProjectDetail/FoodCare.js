@@ -5,6 +5,7 @@ import './FoodCare.css'
 import FoodCareDemo from '../../Pictures/FoodCare/foodcare_demo.mp4'
 import FoodCareArchitecture from '../../Pictures/FoodCare/foodcare_arch.png'
 import SecondHeader from '../../Header/SecondHeader'
+import { NavLink } from 'react-router-dom'
 
 function FoodCare() {
   const aims = (<>1. Generative AI tools and prompt engineering shifted many industries, including healthcare.{'\n'}
@@ -21,6 +22,9 @@ function FoodCare() {
     <div>
         <Header />
         <SecondHeader />
+        <div className='go__back__btn'>
+          <NavLink to='/projects'>Back to Projects Page</NavLink>
+        </div>
         <div className='foodcare'>
           <div className='foodcare__introduction'>
             <h1>Food Care</h1>

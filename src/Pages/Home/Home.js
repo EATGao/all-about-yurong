@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React from 'react';
 import './Home.css';
 import SocialMedia from './SocialMedia'
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -14,11 +14,13 @@ function MainPage() {
       <div className='home__left'>
         <div className='home__description'>
           <div className='home__title__part'>
-            Hi, I'm Yurong. | Frontend Developer
+            Hi, I'm Yurong. | Developer
           </div>
-          <p>Located in <strong>Sydney</strong> now.</p>
-          <p>Recently graduated from Monash University.</p>
-          <p>Love coding and gaming.</p>  
+          <div className='home__other__info'>
+            Located in <strong>Sydney</strong> now.{'\n'}
+            Recently graduated from Monash University.{'\n'}
+            Love coding and gaming.
+          </div>
         </div>
         <div className='home__social__media'>
           <SocialMedia IconButton={GitHubIcon} title='GitHub' isWeb={true} url='https://github.com/EATGao'/>
