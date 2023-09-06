@@ -19,7 +19,7 @@ function Contact() {
     e.preventDefault();
 
     /*write send function here*/
-    emailjs.sendForm('serviceid', 'templateid', form.current, 'publickey')
+    emailjs.sendForm('')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -31,7 +31,6 @@ function Contact() {
     setSubject("");
     setMessage("");
 
-    // document.querySelector('.sent__indicator').c
     setindicatorVisible(true);
 
   }

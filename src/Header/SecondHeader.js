@@ -20,6 +20,7 @@ function SecondHeader() {
             <ul className={secondMenuOpen ? "open" : ""}>
                 <li><NavLink to='/projects/foodcare'>Food Care</NavLink></li>
                 <li><NavLink to='/projects/dailyreader'>Daily Reader</NavLink></li>
+                <li><NavLink to='/projects/htny'>HealingTalkNearestYou</NavLink></li>
                 <li><NavLink to='/projects/cloneprojects'>Clone Projects</NavLink></li>
                 <li></li>
             </ul>
