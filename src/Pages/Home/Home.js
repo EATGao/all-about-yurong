@@ -14,11 +14,11 @@ function MainPage() {
       <div className='home__left'>
         <div className='home__description'>
           <div className='home__title__part'>
-            Hi, I'm Yurong. | Developer
+            Hi, I'm Yurong.
           </div>
           <div className='home__other__info'>
-            Located in <strong>Sydney</strong> now.{'\n'}
-            Recently graduated from Monash University.{'\n'}
+            A <strong>Fullstack Developer</strong>.{'\n'}
+            Located in Sydney.{'\n'}
             Love coding and gaming.
           </div>
         </div>

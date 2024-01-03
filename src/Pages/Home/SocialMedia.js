@@ -11,11 +11,10 @@ function SocialMedia({ IconButton, isWeb, url, email}) {
     } else {
       navigator.clipboard.writeText(email)
       .then(() => {
-        alert('Copied to clipboard!');
+        alert('Email address has copied to your clipboard!');
       })
       .catch((error) => {
-        console.error('Copy to clipboard failed:', error);
-        alert('Copy to clipboard failed. Please try again.');
+        alert('Copy Email address to clipboard failed. Please try again.');
       });
     }
     
