@@ -1,47 +1,11 @@
+import { useState, useEffect } from "react";
 
-export default function flameBackground() {
+export default function flameBackground(height) {
+
   const canvas = document.querySelector('canvas');
 	canvas.width = window.innerWidth;
-	canvas.height = window.innerHeight;
-
+	canvas.height = height? height : window.innerHeight;
 	const c = canvas.getContext('2d');
-
-	// rectangle
-	// c.fillStyle = ('rgba(255, 0, 0, 0.2')
-	// c.fillRect(100, 100, 100, 100)
-	// c.fillStyle = ('rgba(255, 255, 0, 0.2')
-	// c.fillRect(100, 300, 100, 100)
-	
-	// //line
-	// c.beginPath();
-	// c.moveTo(200, 300);
-	// c.lineTo(300, 200);
-	// c.strokeStyle='black'
-	// c.stroke();
-
-	// c.lineTo(30, 200);
-	// c.strokeStyle='red'
-	// c.stroke();
-
-	// // arc/circle
-	// // c.beginPath();
-	// // c.arc(300, 300, 30, 0, Math.PI * 2, false);
-	// // c.strokeStyle='blue';
-	// // c.stroke();
-
-	// let circleNumber = 10;
-	
-	// for (let i = circleNumber; i > 0; i--) {
-	// 	let x = Math.random() * window.innerWidth + 10;
-	// 	let color = ("rgb(" + String(Math.floor((Math.random()) * 255)) + "," + 
-	// 		String(Math.floor((Math.random()) * 255)) + "," +
-	// 		String(Math.floor((Math.random()) * 255)) + ")").split().join('')
-	// 	c.beginPath();
-	// 	c.arc(x, 300 + (10 * i), 20 - i, 0, Math.PI * 2, false);
-	// 	c.strokeStyle = color;
-	// 	console.log(color)
-	// 	c.stroke();
-	// }
 
 	let mouse = {
 		x: undefined,

@@ -3,15 +3,6 @@
     position: relative;
 }
 
-/* .home__right {
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-content: center;
-    margin-right: 100px;
-} */
-
 .home__left {
     position: relative;
     z-index: 1;

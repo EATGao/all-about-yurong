@@ -5,18 +5,40 @@ import flameBackground from './FlameBackground';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AttachEmailIcon from '@mui/icons-material/AttachEmail';
-import Flame from './Flame';
-import ContentMinHeight from '../../Util/ContentMinHeight'
+
 import { Alert } from '@mui/material'
+
+const ContentMinHeight = function() {
+  const [headerHeight, setHeaderHeight] = useState(0);
+
+  useEffect(() => {
+      // Calculate header height and set state
+      const headerElement = document.querySelector('.header');
+      if (headerElement) {
+      const height = headerElement.getBoundingClientRect().height;
+      setHeaderHeight(height);
+      }
+  }, []);
+
+  const contentMinHeight = `calc(100vh - ${headerHeight}px`;
+  return contentMinHeight;
+}
 
 function MainPage() {
   const [alert, setAlert] = useState(false);
   const [alertType, setAlertType] = useState('success');
   const [alertContent, setAlertContent] = useState('');
+	const [canvasHeight, setCanvasHeight] = useState(window.innerHeight);
 
   useEffect(() => {
-    flameBackground();
-  }, []);
+    const header = document.querySelector('.header');
+    if (header) {
+      setCanvasHeight(window.innerHeight - header.getBoundingClientRect().height)
+      console.log('c' + canvasHeight)
+      console.log(window.innerHeight)
+    }
+    flameBackground(canvasHeight);
+  }, [canvasHeight]);
 
   const handleClick = (isWeb, link) => {
     if (isWeb) {
