@@ -1,17 +1,22 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import './Home.css';
+import flameBackground from './FlameBackground';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AttachEmailIcon from '@mui/icons-material/AttachEmail';
 import Flame from './Flame';
 import ContentMinHeight from '../../Util/ContentMinHeight'
 import { Alert } from '@mui/material'
-import { useState } from 'react';
 
 function MainPage() {
   const [alert, setAlert] = useState(false);
   const [alertType, setAlertType] = useState('success');
   const [alertContent, setAlertContent] = useState('');
+
+  useEffect(() => {
+    flameBackground();
+  }, []);
 
   const handleClick = (isWeb, link) => {
     if (isWeb) {
@@ -22,17 +27,17 @@ function MainPage() {
         setAlertContent('Email address has copied to your clipboard!');
         setAlert(true)
       })
-      .catch((error) => {
+      .catch(() => {
         setAlertType('error');
         setAlertContent('Copy Email address to clipboard failed. Please try again.');
         setAlert(true)
       });
     }
-    // console.log(isWeb + link)
   }
 
   return (
     <div className='home' style={{ minHeight: ContentMinHeight() }}>
+      <canvas style={{zIndex: -1}}></canvas>
       <div className='home__left'>
         <div className='home__description'>
           <div className='home__title__part'>
@@ -59,10 +64,10 @@ function MainPage() {
           {alert && <Alert className='alert' severity={alertType} onClose={() => {setAlert(false)}}>{alertContent}</Alert>}
         </div>
       </div>
-      <div className='home__right'>
-        <Flame />
-      </div>
 
+      <div className='home__right'>
+              {/*<Flame /> */}
+      </div>
     </div>
   )
 }

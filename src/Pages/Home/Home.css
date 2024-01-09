@@ -1,21 +1,22 @@
 .home {
-    display: flex;
     width: 100%;
-    background-color: white;
-    align-items: center; 
-    justify-content: space-between;
+    position: relative;
 }
 
-.home__right {
+/* .home__right {
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-self: center;
     justify-content: center;
     margin-right: 100px;
-}
+} */
 
 .home__left {
-    padding-left: 100px;
+    position: relative;
+    z-index: 1;
+    margin-top: -700px;
+    margin-left: 50rem;
 }
 
 .home__description {
