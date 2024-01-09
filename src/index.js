@@ -1,49 +1,49 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import ReactDOM from 'react-dom/client';
-import './global.scss';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import Contact from './Pages/Contact/Contact';
-import About from './Pages/About/About';
-import Project from './Pages/Project/Project';
-import FoodCare from './Pages/ProjectDetail/FoodCare';
-import DailyReader from './Pages/ProjectDetail/DailyReader';
-import CloneProjects from './Pages/ProjectDetail/CloneProjects';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import './global.scss';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-const router = createBrowserRouter([
+const FoodCare = lazy(() => import('./Pages/ProjectDetail/FoodCare'))
+const DailyReader = lazy(() => import('./Pages/ProjectDetail/DailyReader'))
+const CloneProjects = lazy(() => import('./Pages/ProjectDetail/CloneProjects'))
+
+const routes = [
   {
     path: "/",
     element: <App/>,
   },
   {
     path: "contact",
-    element: <Contact/>,
+    element: <App/>,
   },
   {
     path: "about",
-    element: <About/>,
+    element: <App/>,
   },
   {
     path: "projects",
-    element: <Project/>,
+    element: <App/>,
   },
   {
     path: "projects/foodcare",
-    element: <FoodCare/>,
+    element: <React.Suspense fallback={<div>Loading...</div>}><FoodCare /></React.Suspense>,
   },
   {
     path: "projects/dailyreader",
-    element: <DailyReader/>,
+    element: <React.Suspense fallback={<div>Loading</div>}><DailyReader/></React.Suspense>,
   },
   {
     path: "projects/cloneprojects",
-    element: <CloneProjects/>,
+    element: <React.Suspense fallback={<div>Loading</div>}><CloneProjects/></React.Suspense>,
   },
-]);
+]
+
+const router = createBrowserRouter(routes);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

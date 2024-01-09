@@ -22,9 +22,6 @@ function FoodCare() {
     <div>
         <Header />
         <SecondHeader />
-        <div className='go__back__btn'>
-          <NavLink to='/projects'>Back to Projects Page</NavLink>
-        </div>
         <div className='foodcare'>
           <div className='foodcare__introduction'>
             <h1>Food Care</h1>

@@ -20,9 +20,6 @@ function DailyReader() {
     <div>
       <Header />
       <SecondHeader />
-      <div className='go__back__btn'>
-        <NavLink to='/projects'>Back to Projects Page</NavLink>
-      </div>
       <div className='dailyreader'>
         <div className='dailyreader__left'>
           <h1>Daily Reader</h1>
