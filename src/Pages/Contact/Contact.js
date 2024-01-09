@@ -38,25 +38,24 @@ function Contact() {
 
   return (
     <div>
-        <Header />
-        <div className='contact' style={{ minHeight: ContentMinHeight() }}>
-          <h2>Leave me a message, I will get back within <strong>2 days :)</strong> </h2>
-          <h3 className={indicatorVisible? 'sent__indicator__show':'sent__indicator'}><strong>Sent!</strong> Thank you for your message!</h3>
-          <div className='contact__message__form'>
-            <form  ref={form} onSubmit={sendEmail}>
-              <label htmlFor='email'>Email <strong>*</strong></label>
-              <input id='email' type='email' name='email' value={email} onChange={e => setEmail(e.target.value)} required/>
-              <label htmlFor='name'>Name<strong>*</strong></label>
-              <input id='name' type='text' name='name' value={name} onChange={e => setName(e.target.value)} required/>
-              <label htmlFor='subject'>Subject<strong>*</strong></label>
-              <input id='subject' type='text' name='subject' value={subject} onChange={e => setSubject(e.target.value)} required/> 
-              <label htmlFor='message'>Message<strong>*</strong></label>
-              <textarea id='message' type='text' name='message' value={message} onChange={e => setMessage(e.target.value)} required/>
-              <input id='send' type='submit' value='Send' />
-            </form>
-          </div>
+      <h1 className='page__title'>Contact</h1>
+      <div className='contact' style={{ minHeight: ContentMinHeight() }}>
+        <h2>Leave me a message, I will get back within <strong>2 days :)</strong> </h2>
+        <h3 className={indicatorVisible? 'sent__indicator__show':'sent__indicator'}><strong>Sent!</strong> Thank you for your message!</h3>
+        <div className='contact__message__form'>
+          <form  ref={form} onSubmit={sendEmail}>
+            <label htmlFor='email'>Email <strong>*</strong></label>
+            <input id='email' type='email' name='email' value={email} onChange={e => setEmail(e.target.value)} required/>
+            <label htmlFor='name'>Name<strong>*</strong></label>
+            <input id='name' type='text' name='name' value={name} onChange={e => setName(e.target.value)} required/>
+            <label htmlFor='subject'>Subject<strong>*</strong></label>
+            <input id='subject' type='text' name='subject' value={subject} onChange={e => setSubject(e.target.value)} required/> 
+            <label htmlFor='message'>Message<strong>*</strong></label>
+            <textarea id='message' type='text' name='message' value={message} onChange={e => setMessage(e.target.value)} required/>
+            <input id='send' type='submit' value='Send' />
+          </form>
         </div>
-        <Footer />
+      </div>
     </div>
   )
 }

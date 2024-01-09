@@ -9,7 +9,7 @@ function About() {
 
   return (
     <div>
-      <Header />
+      <h1 className='page__title'>About</h1>
       <div className='about'> 
           <div className='about__technical'>
             <h1>Technical skills</h1>
@@ -23,18 +23,11 @@ function About() {
                 <p>Node.js</p>
                 <p>React</p>
                 <p>AJAX</p>
-              </div>
-              <div className='about__technical__skill'>
-                Mobile:{' '}
+                <p>Git</p>
+                <p>RESTful API</p>
                 <p>Java</p>
                 <p>Kotlin</p>
                 <p>Firebase</p>
-                <p>Jetpack Architecture Components</p>
-              </div>
-              <div className='about__technical__skill'>
-                Others:{' '}
-                <p>Git</p>
-                <p>RESTful API</p>
               </div>
             </div>
           </div>
@@ -44,11 +37,10 @@ function About() {
               <Education degree='Master of Information Technology' 
                 university='Monash University (Australia)' 
                 time='July 2023'
-                honours='80.1/100 (HD)'/>
+                honours='3.5/4.0 (H1)'/>
               <Education degree='Bachelor of Business(Hons) Accounting' 
                 university='INTI University (Malaysia)' 
-                time='April 2021'
-                honours='Second Class Honours'/>
+                time='April 2021'/>
             </div>
           </div>
           <div className='about__me'>
@@ -69,7 +61,6 @@ function About() {
             </div>
           </div>
         </div>
-        <Footer />
     </div>
   )
 }
