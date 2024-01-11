@@ -8,6 +8,9 @@ import './global.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const About = lazy(() => import('./Pages/About/About')) 
+const Project = lazy(() => import('./Pages/Project/Project')) 
+const Contact = lazy(() => import('./Pages/Contact/Contact'))
 const FoodCare = lazy(() => import('./Pages/ProjectDetail/FoodCare'))
 const DailyReader = lazy(() => import('./Pages/ProjectDetail/DailyReader'))
 const CloneProjects = lazy(() => import('./Pages/ProjectDetail/CloneProjects'))
@@ -19,15 +22,15 @@ const routes = [
   },
   {
     path: "contact",
-    element: <App/>,
+    element: <React.Suspense fallback={<div>Loading...</div>}><Contact/></React.Suspense>,
   },
   {
     path: "about",
-    element: <App/>,
+    element: <React.Suspense fallback={<div>Loading...</div>}><About/></React.Suspense>,
   },
   {
     path: "projects",
-    element: <App/>,
+    element: <React.Suspense fallback={<div>Loading...</div>}><Project/></React.Suspense>,
   },
   {
     path: "projects/foodcare",

@@ -12,7 +12,7 @@ function Project() {
 
   return (
     <div> 
-      <h1 className='page__title'>Projects</h1>
+      <Header />
       <div className='projects'>
         <ProjectDescription title='Food Care' description="This is an Android application that target people living with Type 2 diabetes since they need to be really careful when choosing food to eat to better manager their conditions. 
         The powerful analysis and generating new content of Generative AI tools provide a new solution to this problem. Thus, this application collects user's information and utilize the cutting-edge technology, ChatGPT, to generate food intake and health recommendations for Type 2 diabetes people." 
@@ -23,6 +23,7 @@ function Project() {
         <ProjectDescription title='Amazon Clone' description="This a clone website that mimic the basic layout and functions of Amazon, such as adding, updating, and deleting items to/in/from the shopping cart, calculate the total price. It is developed purely in HTML, CSS and JavaScript."
         pictureLink={ClonePic} accessLinks="/projects/cloneprojects" isWeb='true'></ProjectDescription>
       </div>
+      <Footer />
     </div>
   )
 }

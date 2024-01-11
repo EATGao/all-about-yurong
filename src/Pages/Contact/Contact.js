@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react'
 import './Contact.css'
 import emailjs from '@emailjs/browser';
+import Header from '../../Header/Header';
+import Footer from '../../Footer/Footer';
 
 function Contact() {
 
@@ -35,7 +37,7 @@ function Contact() {
 
   return (
     <div>
-      <h1 className='page__title'>Contact</h1>
+      <Header />
       <div className='contact' style={{ minHeight: '100vh' }}>
         <h2>Leave me a message, I will get back within <strong>2 days :)</strong> </h2>
         <h3 className={indicatorVisible? 'sent__indicator__show':'sent__indicator'}><strong>Sent!</strong> Thank you for your message!</h3>
@@ -53,6 +55,7 @@ function Contact() {
           </form>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

@@ -2,9 +2,6 @@ import './App.css';
 import Header from './Header/Header';
 import Home from './Pages/Home/Home';
 import Footer from './Footer/Footer'
-import About from './Pages/About/About'
-import Project from './Pages/Project/Project';
-import Contact from './Pages/Contact/Contact';
 
 function App() {
   return (
@@ -12,9 +9,6 @@ function App() {
       <Header />
       <div className='app_body'>
         <Home />
-        <About />
-        <Project />
-        <Contact />
       </div>
       <Footer />
     </div>

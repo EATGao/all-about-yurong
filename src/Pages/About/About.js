@@ -9,13 +9,12 @@ function About() {
 
   return (
     <div>
-      <h1 className='page__title'>About</h1>
+      <Header />
       <div className='about'> 
           <div className='about__technical'>
             <h1>Technical skills</h1>
             <div className='about__technical__skills'>
               <div className='about__technical__skill'>
-                Frontend:{' '}
                 <p>HTML</p>
                 <p>CSS</p>
                 <p>JavaScript</p>
@@ -61,6 +60,7 @@ function About() {
             </div>
           </div>
         </div>
+        <Footer />
     </div>
   )
 }
