@@ -24,6 +24,9 @@ export default function flameBackground(height) {
 			let dy = (Math.random() - 0.5);
 			circleArray.push(new Circle(x, y, dx, dy, radius, radius));
 		}
+		c.font = "48px serif";
+		c.fillText("Hello world", 10, 50);		c.font = "48px serif";
+
 	}
 
 	const colorArray = [

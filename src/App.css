@@ -6,12 +6,6 @@ html {
     font-family: monospace;
 }
 
-strong {
-    color: #F26B8A;
-    margin: 0;
-    display: inline;
-    font-weight: 600;
-}
 
 .app_body {
     margin: 0;

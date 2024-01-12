@@ -34,8 +34,6 @@ function MainPage() {
     const header = document.querySelector('.header');
     if (header) {
       setCanvasHeight(window.innerHeight - header.getBoundingClientRect().height)
-      console.log('c' + canvasHeight)
-      console.log(window.innerHeight)
     }
     flameBackground(canvasHeight);
   }, [canvasHeight]);
@@ -60,35 +58,33 @@ function MainPage() {
   return (
     <div className='home' style={{ minHeight: ContentMinHeight() }}>
       <canvas style={{zIndex: -1}}></canvas>
-      <div className='home__left'>
-        <div className='home__description'>
-          <div className='home__title__part'>
-            Hi, I'm Yurong.
+      <div className='home__intro'>
+        <div className='home__text'>
+          <div className='home__description'>
+            <div className='home__title__part'>
+              Hi, I'm Yurong.
+            </div>
+            <div className='home__other__info'>
+              A <strong>Fullstack Developer</strong>.{'\n'}
+              Located in Sydney.{'\n'}
+              Love coding, gaming and hiking.
+            </div>
           </div>
-          <div className='home__other__info'>
-            A <strong>Fullstack Developer</strong>.{'\n'}
-            Located in Sydney.{'\n'}
-            Love coding and gaming.
+          <div className='home__social__media'>
+            <div className='social__media'>
+              <GitHubIcon style={{ width: 40, height: 50 }} onClick={() => {handleClick(true, 'https://github.com/EATGao')}}/>
+            </div>
+            <div className='social__media' onClick={() => {handleClick(true, 'https://www.linkedin.com/in/yurong-gao-933b411a1/')}}>
+              <LinkedInIcon style={{ width: 40, height: 50 }}/>
+            </div>
+            <div className='social__media' onClick={() => {handleClick(false, 'gaoyurong923@gmail.com')}}>
+              <AttachEmailIcon style={{ width: 40, height: 50 }}/>
+            </div>
+          </div>
+          <div className='email__copy__alert'>
+            {alert && <Alert className='alert' severity={alertType} onClose={() => {setAlert(false)}}>{alertContent}</Alert>}
           </div>
         </div>
-        <div className='home__social__media'>
-          <div className='social__media'>
-            <GitHubIcon style={{ width: 40, height: 50 }} onClick={() => {handleClick(true, 'https://github.com/EATGao')}}/>
-          </div>
-          <div className='social__media' onClick={() => {handleClick(true, 'https://www.linkedin.com/in/yurong-gao-933b411a1/')}}>
-            <LinkedInIcon style={{ width: 40, height: 50 }}/>
-          </div>
-          <div className='social__media' onClick={() => {handleClick(false, 'gaoyurong923@gmail.com')}}>
-            <AttachEmailIcon style={{ width: 40, height: 50 }}/>
-          </div>
-        </div>
-        <div className='email__copy__alert'>
-          {alert && <Alert className='alert' severity={alertType} onClose={() => {setAlert(false)}}>{alertContent}</Alert>}
-        </div>
-      </div>
-
-      <div className='home__right'>
-              {/*<Flame /> */}
       </div>
     </div>
   )
