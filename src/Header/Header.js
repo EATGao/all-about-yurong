@@ -10,7 +10,7 @@ function Header() {
 
 
   return (
-    <div className='header'>
+    <header className='header'>
       
       <nav className='header__left'>
         <NavLink to='/'><img src={Logo} alt='a logo' id='logo'/></NavLink>
@@ -36,7 +36,7 @@ function Header() {
           </ul>
         </nav>
       </div> 
-    </div>
+    </header>
 
   )
 }
