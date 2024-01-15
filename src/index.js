@@ -39,11 +39,13 @@ const routes = [
   {
     path: "projects/dailyreader",
     element: <React.Suspense fallback={<div>Loading</div>}><DailyReader/></React.Suspense>,
-  },
+  }, 
+  {/*
   {
     path: "projects/cloneprojects",
     element: <React.Suspense fallback={<div>Loading</div>}><CloneProjects/></React.Suspense>,
   },
+  */}
 ]
 
 const router = createBrowserRouter(routes);

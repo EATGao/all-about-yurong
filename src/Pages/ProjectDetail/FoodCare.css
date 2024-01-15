@@ -32,6 +32,10 @@
     height: auto;
 }
 
+img {
+    width: 96%;
+}
+
 @media (max-width: 480px) {
     .foodcare {
         display: flex;
