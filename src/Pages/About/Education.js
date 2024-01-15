@@ -12,9 +12,6 @@ function Education({ degree, university, time, honours}) {
             <h4>{honours}</h4>
             <h3>{time}</h3>
         </div>
-        <div className='education__honours'>
-            
-        </div>
     </div>
   )
 }

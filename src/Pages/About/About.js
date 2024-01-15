@@ -11,10 +11,9 @@ function About() {
     <div>
       <Header />
       <div className='about'> 
-          <div className='about__technical'>
+          <section className='about__technical'>
             <h1>Technical skills</h1>
             <div className='about__technical__skills'>
-              <div className='about__technical__skill'>
                 <p>HTML</p>
                 <p>CSS</p>
                 <p>JavaScript</p>
@@ -27,10 +26,9 @@ function About() {
                 <p>Java</p>
                 <p>Kotlin</p>
                 <p>Firebase</p>
-              </div>
             </div>
-          </div>
-          <div className='about__education'>
+          </section>
+          <section className='about__education'>
             <h1>Education</h1>
             <div className='educations'>
               <Education degree='Master of Information Technology' 
@@ -41,24 +39,27 @@ function About() {
                 university='INTI University (Malaysia)' 
                 time='April 2021'/>
             </div>
-          </div>
-          <div className='about__me'>
+          </section>
+          <section className='about__me'>
             <h1>About me</h1>
             <div className='about__self__description'>
-              <div className='self__image'>
+              <figure className='self__image'>
                 <img src={Selfie} alt='selfie' />
-              </div>
-              <div className='self__description'>
+              </figure>
+              <article className='self__description'>
+                <h2>When and why I choose IT</h2>
                 <p>
                   I embarked on my coding journey in 2021, sparked by games like Assassin's Creed II and The Witcher 3. 
                   Intrigued by the digital world, I dreamt of creating my own games and websites. This led me to self-learn 
                   C and dive into software development. Since then, I've explored languages like Java, C#, and Kotlin, 
                   collaborating on projects at Monash University. I also developed a mobile app integrating ChatGPT to 
-                  provide health advice to those with diabetes. Coding, to me, is the most captivating art form. 
+                  provide health advice to those with diabetes. 
                 </p>
-              </div>
+                <h2>What does coding mean to me?</h2>
+                <p>Coding, to me, is the most captivating art form. I dedicate most of my spare time on coding.</p>
+              </article>
             </div>
-          </div>
+          </section>
         </div>
         <Footer />
     </div>
