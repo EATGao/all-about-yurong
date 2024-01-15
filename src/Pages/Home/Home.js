@@ -59,7 +59,7 @@ function MainPage() {
     <div className='home' style={{ minHeight: ContentMinHeight() }}>
       <canvas style={{zIndex: -1}}></canvas>
       <div className='home__intro'>
-        <div className='home__text'>
+        <main className='home__text'>
           <div className='home__description'>
             <div className='home__title__part'>
               Hi, I'm Yurong.
@@ -84,7 +84,7 @@ function MainPage() {
           <div className='email__copy__alert'>
             {alert && <Alert className='alert' severity={alertType} onClose={() => {setAlert(false)}}>{alertContent}</Alert>}
           </div>
-        </div>
+        </main>
       </div>
     </div>
   )
