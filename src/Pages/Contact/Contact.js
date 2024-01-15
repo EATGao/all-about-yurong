@@ -38,7 +38,7 @@ function Contact() {
   return (
     <div>
       <Header />
-      <div className='contact' style={{ minHeight: '100vh' }}>
+      <article className='contact' style={{ minHeight: '100vh' }}>
         <h2>Leave me a message, I will get back within <strong>2 days :)</strong> </h2>
         <h3 className={indicatorVisible? 'sent__indicator__show':'sent__indicator'}><strong>Sent!</strong> Thank you for your message!</h3>
         <div className='contact__message__form'>
@@ -54,7 +54,7 @@ function Contact() {
             <input id='send' type='submit' value='Send' />
           </form>
         </div>
-      </div>
+      </article>
       <Footer />
     </div>
   )
