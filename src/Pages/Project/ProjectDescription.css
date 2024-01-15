@@ -1,6 +1,6 @@
 .project__container {
     display: grid;
-    width: 70%;
+    width: 60%;
     height: auto;
     padding: 20px;
     grid-template-columns: 1fr 1fr;
@@ -14,6 +14,7 @@
     font-size: 30px;
     font-weight: 800;
     align-self: center;
+    margin-bottom: -5px;
 }
 
 .project__description {

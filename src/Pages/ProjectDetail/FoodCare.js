@@ -5,7 +5,6 @@ import './FoodCare.css'
 import FoodCareDemo from '../../Pictures/FoodCare/foodcare_demo.mp4'
 import FoodCareArchitecture from '../../Pictures/FoodCare/foodcare_arch.png'
 import SecondHeader from '../../Header/SecondHeader'
-import { NavLink } from 'react-router-dom'
 
 function FoodCare() {
   const aims = (<>1. Generative AI tools and prompt engineering shifted many industries, including healthcare.{'\n'}
@@ -56,10 +55,10 @@ function FoodCare() {
                 </tbody>
               </table>
             </div>
-            <div className='foodcare__arch'>
+            <figure className='foodcare__arch'>
               <h2>Application Architecture</h2>
               <img src={FoodCareArchitecture} alt='food care application architecture'></img>
-            </div>
+            </figure>
           </div>
           <div className='foodcare__demo'>
             <video autoPlay loop muted>

@@ -6,15 +6,15 @@ function ProjectDescription({title, description, pictureLink, accessLinks, isWeb
 
   return (
     <div className='project__container'>
-        <div className='project__title'>
+        <h1 className='project__title'>
           {title}
-        </div>
-        <div className='project__description'>
+        </h1>
+        <p className='project__description'>
           {description}
-        </div>
-        <div className='project__picture'>
+        </p>
+        <figure className='project__picture'>
           <img className={isWeb? "web__demo__image":"mobile__demo__image" } src={pictureLink} alt='screenshot of the project'></img>
-        </div>
+        </figure>
         <div className='project__access'>
           <button><NavLink to={accessLinks}>View Project Page</NavLink></button>
         </div>
