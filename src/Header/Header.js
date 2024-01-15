@@ -12,9 +12,9 @@ function Header() {
   return (
     <div className='header'>
       
-      <div className='header__left'>
+      <nav className='header__left'>
         <NavLink to='/'><img src={Logo} alt='a logo' id='logo'/></NavLink>
-      </div>
+      </nav>
 
       <div className='header__right'>
         <nav>
@@ -36,13 +36,6 @@ function Header() {
           </ul>
         </nav>
       </div> 
-
-{/*
-      <div className='header__mode__btn'>
-          <IconButton style={iconButtonStyle}>
-            <DarkModeIcon />
-          </IconButton>
-  </div> */}
     </div>
 
   )
